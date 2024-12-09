@@ -1,1 +1,139 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@100..900&display=swap");
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-medium {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.raleway-semibold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.landing-navbar {
+  padding: 16px 0;
+}
+@media only screen and (max-width: 992px) {
+  .landing-navbar .container {
+    padding: 0 16px;
+  }
+}
+.landing-navbar .login-btn {
+  width: 118px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #04c2c4;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.landing-navbar .navbar-nav {
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-navbar .navbar-toggler {
+    padding: 0;
+  }
+}
+.landing-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+@media only screen and (max-width: 992px) {
+  .landing-navbar .navbar-collapse {
+    order: 3;
+  }
+}
+.landing-navbar .btn-group {
+  order: 3;
+}
+@media only screen and (max-width: 992px) {
+  .landing-navbar .btn-group {
+    order: 1;
+  }
+}
+.landing-navbar .nav-link {
+  color: #000;
+  font-size: 16px;
+}
+
+.lang-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang-dropdown .dropdown-menu {
+  min-width: 76px;
+}
+.lang-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.lang-dropdown .dropdown-toggle:active, .lang-dropdown .dropdown-toggle:focus {
+  border: none;
+}
+.lang-dropdown .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+.lang-dropdown .flag-icon {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  margin-right: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang-dropdown .flag-icon img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

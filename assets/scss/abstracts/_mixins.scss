@@ -20,11 +20,11 @@
             @content;
         }
     } @else if $size ==tablet-landscape-up {
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: 992px) {
             @content;
         }
     } @else if $size ==tablet-landscape-down {
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 992px) {
             @content;
         }
     } @else if $size ==desktop-up {
