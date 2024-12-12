@@ -136,4 +136,85 @@
 .lang-dropdown .flag-icon img {
   width: 100%;
   height: 100%;
+}
+
+.landing-header {
+  width: 100%;
+}
+.landing-header .container-fluid {
+  height: 100%;
+  max-height: 600px;
+  height: 600px;
+  min-height: 600px;
+  overflow: hidden;
+}
+.landing-header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.landing-header .overlay {
+  background-color: rgba(0, 0, 0, 0.6980392157);
+}
+@media only screen and (max-width: 992px) {
+  .landing-header .overlay .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.landing-header .overlay h1 {
+  max-width: 916px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-header .overlay h1 {
+    width: 100%;
+    font-size: 32px;
+    margin-bottom: 21px;
+    text-align: center;
+  }
+}
+.landing-header .overlay p {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media only screen and (max-width: 992px) {
+  .landing-header .overlay p {
+    text-align: center;
+  }
+}
+.landing-header .overlay a {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #04c2c4;
+  padding: 10px 30px;
+  margin-top: 64px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-header .overlay a.btn-lg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .landing-header .overlay a.btn-sm {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
