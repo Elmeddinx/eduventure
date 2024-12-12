@@ -1,0 +1,34 @@
+.btn-style-1 {
+    border: 2px solid #04c2c4;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: fit-content;
+    transition: all .3s;
+    div {
+        width: 33.78px;
+        height: 33.78px;
+        border-radius: 50%;
+        background-color: #04c2c4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+    }
+    &:hover {
+        background-color: #04c2c4;
+        color: #fff;
+        transition: all .3s;
+        div {
+            background-color: #fff;
+            transition: all .3s;
+            svg {
+                path {
+                    fill: #04c2c4;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+}
