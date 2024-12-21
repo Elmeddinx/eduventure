@@ -1,0 +1,10 @@
+<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Linear / Time / Calendar Date">
+<path id="Vector" d="M2 9C2 6.17157 2 4.75736 2.87868 3.87868C3.75736 3 5.17157 3 8 3H11C13.8284 3 15.2426 3 16.1213 3.87868C17 4.75736 17 6.17157 17 9V10.5C17 13.3284 17 14.7426 16.1213 15.6213C15.2426 16.5 13.8284 16.5 11 16.5H8C5.17157 16.5 3.75736 16.5 2.87868 15.6213C2 14.7426 2 13.3284 2 10.5V9Z" stroke="#838383"/>
+<path id="Vector_2" d="M5.75 3V1.875" stroke="#838383" stroke-linecap="round"/>
+<path id="Vector_3" d="M13.25 3V1.875" stroke="#838383" stroke-linecap="round"/>
+<path id="Vector_4" d="M7.25 10.875L8.375 9.75V12.75" stroke="#838383" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M10.25 12V10.5C10.25 10.0858 10.5858 9.75 11 9.75C11.4142 9.75 11.75 10.0858 11.75 10.5V12C11.75 12.4142 11.4142 12.75 11 12.75C10.5858 12.75 10.25 12.4142 10.25 12Z" stroke="#838383" stroke-linecap="round"/>
+<path id="Vector_6" d="M2.375 6.75H16.625" stroke="#838383" stroke-linecap="round"/>
+</g>
+</svg>

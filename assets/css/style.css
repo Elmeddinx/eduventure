@@ -486,4 +486,192 @@
   line-height: normal;
   border-bottom: 2px solid #04c2c4;
   margin-bottom: 55px;
+}
+
+.landing-section-3 {
+  padding: 120px 0;
+}
+.landing-section-3 .row {
+  row-gap: 40px;
+}
+.landing-section-3 .row a {
+  text-decoration: none;
+}
+.landing-section-3 .row .vacancy {
+  max-height: 215px;
+}
+.landing-section-3 .row .vacancy .card {
+  height: 100%;
+  border-radius: 12px;
+  background: #f5f5f5;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+}
+.landing-section-3 .row .vacancy .card .card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+.landing-section-3 .row .vacancy .card .card-header .card-icon {
+  background-color: #04c2c4;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-section-3 .row .vacancy .card .card-header .card-icon img {
+  width: 18px;
+  height: 18px;
+}
+.landing-section-3 .row .vacancy .card .card-header .card-details {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.landing-section-3 .row .vacancy .card .card-header .card-details span {
+  color: #838383;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+.landing-section-3 .row .vacancy .card .card-header .card-details .card-date {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+.landing-section-3 .row .vacancy .card .card-header .card-details .card-count {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+.landing-section-3 .row .vacancy .card .card-header .card-details img {
+  width: 18px;
+  height: 18px;
+}
+.landing-section-3 .row .vacancy .card .card-body {
+  padding: 18px 0 0 0;
+}
+.landing-section-3 .row .vacancy .card .card-body h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.landing-section-3 .row .vacancy .card .card-body p {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .landing-section-3 .row .vacancy .card .card-body p.card-more {
+    display: none;
+  }
+}
+.landing-section-3 .row .vacancy .card .card-body .card-more {
+  color: #04c2c4;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.landing-section-3 .row .vacancy .card:hover {
+  background: #04c2c4;
+  transition: all 0.3s ease;
+}
+.landing-section-3 .row .vacancy .card:hover * {
+  color: #fff !important;
+}
+.landing-section-3 .row .vacancy .card:hover .card-header .card-icon {
+  background-color: #fff;
+}
+.landing-section-3 .row .vacancy .card:hover .card-header .card-icon svg path {
+  fill: #04c2c4;
+}
+.landing-section-3 .row .vacancy .card:hover .card-header .card-details svg {
+  fill: #fff;
+}
+.landing-section-3 .row .vacancy .card:hover .card-header .card-details svg path {
+  fill: #fff;
+}
+.landing-section-3 .row .vacancy .card:hover .card-body p svg path {
+  fill: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .landing-section-3 .row .vacancy:nth-child(4), .landing-section-3 .row .vacancy:nth-child(5) {
+    display: none;
+  }
+}
+.landing-section-3 .row .more-vacancy {
+  max-height: 215px;
+  min-height: 215px;
+}
+.landing-section-3 .row .more-vacancy .card {
+  height: 100%;
+  border-radius: 12px;
+  background: #04c2c4;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.landing-section-3 .row .more-vacancy .card .card-body h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 46px;
+}
+@media only screen and (max-width: 380px) {
+  .landing-section-3 .row .more-vacancy .card .card-body h3 {
+    font-size: 28px;
+  }
+}
+.landing-section-3 .row .more-vacancy .card .card-body .card-more svg path {
+  fill: #fff;
+}
+
+.landing-page-header {
+  margin-bottom: 60px;
+}
+.landing-page-header h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 2px solid #04c2c4;
+  margin-bottom: 25px;
+}
+.landing-page-header p {
+  color: #4c4c4c;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 1.2px;
 }/*# sourceMappingURL=style.css.map */
