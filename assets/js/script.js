@@ -42,3 +42,27 @@ var swiper = new Swiper(".landing-swiper", {
   slidesPerView: 1.2,
   spaceBetween: 19,
 });
+var swiper = new Swiper(".landing-employee-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 32,
+  pagination: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.18,
+      spaceBetween: 16,
+    },
+    625: {
+      slidesPerView: 1.8,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 1.8,
+    },
+    825: {
+      slidesPerView: 2.25,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});

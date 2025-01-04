@@ -1,0 +1,42 @@
+.landing-section-4 {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    .landing-employee-swiper {
+        margin-bottom: 45px;
+        .swiper-slide {
+            .card {
+                img {
+                    min-height: 430px;
+                    height: 430px;
+                    max-height: 430px;
+                    object-fit: cover;
+                    object-position: center;
+                    border: 0.2px solid #000;
+                    border-radius: 12px;
+                }
+                a {
+                    text-decoration: none;
+                }
+                .card-title {
+                    color: #000;
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 31px;
+                    letter-spacing: 1.2px;
+                }
+                .card-desc {
+                    color: #757575;
+                    font-family: Raleway;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 31px;
+                    letter-spacing: 0.9px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #414141;
+    .footer-top {
+        width: 100%;
+        .row {
+            column-gap: 117px;
+            @include mq(desktop-up) {
+                column-gap: 40px;
+            }
+            @include mq(tablet-landscape-up) {
+                row-gap: 50px;
+            }
+        }
+        .footer-logo {
+            width: 117px;
+            height: 81px;
+            img {
+                width: 100%;
+            }
+        }
+        .footer-menu {
+            width: 79%;
+            @include mq(tablet-landscape-up) {
+                width: 100%;
+            }
+            .row {
+                width: 100%;
+                column-gap: 154px;
+                flex-wrap: nowrap;
+                @include mq(desktop-up) {
+                    column-gap: 54px;
+                    flex-wrap: wrap;
+                    row-gap: 60px;
+                }
+                ul {
+                    width: 196px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 34px;
+                    .footer-menu-item {
+                        list-style: none;
+                        .footer-menu-link {
+                            text-decoration: none;
+                            color: #fff;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        margin-top: 70px;
+        padding-top: 30px;
+        border-top: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+        
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+            row-gap: 50px;
+        }
+        .copyright-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .footer-social {
+            ul {
+                display: flex;
+                column-gap: 18px;
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+            &-item {
+                list-style: none;
+            }
+            &-link {
+
+            }
+        }
+    }
+}
