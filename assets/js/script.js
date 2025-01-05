@@ -112,3 +112,55 @@ if (closeVideoButton) {
     }
   });
 }
+
+
+const password = document.getElementById("password");
+const passwordEye = document.getElementById("passwordEye");
+if (password && passwordEye) {
+  passwordEye.addEventListener("click", function () {
+    if (password.type === "password") {
+      password.type = "text";
+      passwordEye.src = "./assets/icons/eye.svg";
+    } else {
+      password.type = "password";
+      passwordEye.src = "./assets/icons/eye-off.svg";
+    }
+  });
+}
+
+
+const uploadPhoto = document.getElementById("upload-photo");
+const uploadLabel = document.getElementById("uploadLabel");
+const uploadSmall = document.getElementById("uploadSmall");
+const previewContainer = document.getElementById("previewContainer");
+const previewImage = document.getElementById("previewImage");
+const changeButton = document.getElementById("changeButton");
+const deleteButton = document.getElementById("deleteButton");
+
+uploadPhoto.addEventListener("change", function () {
+  const file = this.files[0];
+
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    previewImage.src = e.target.result;
+    previewContainer.style.display = "flex";
+    uploadLabel.style.display = "none";
+    uploadSmall.style.display = "none";
+  };
+  reader.readAsDataURL(file);
+
+});
+
+changeButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  uploadPhoto.value = null;
+  uploadPhoto.click();
+});
+
+deleteButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  uploadPhoto.value = null;
+  previewContainer.style.display = "none";
+  uploadLabel.style.display = "flex";
+  uploadSmall.style.display = "block";
+});
