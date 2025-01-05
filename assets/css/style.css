@@ -112,6 +112,37 @@
   text-decoration: none;
 }
 
+.section-header {
+  margin-bottom: 60px;
+}
+.section-header h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 2px solid #04c2c4;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .section-header h2 {
+    font-size: 26px;
+  }
+}
+.section-header p {
+  color: #4c4c4c;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 1.2px;
+}
+
 .landing-navbar {
   padding: 16px 0;
 }
@@ -775,32 +806,6 @@ footer .footer-bottom .footer-social-item {
 }
 .landing-section-3 .row .more-vacancy .card .card-body .card-more svg path {
   fill: #fff;
-}
-
-.section-header {
-  margin-bottom: 60px;
-}
-.section-header h2 {
-  width: -moz-fit-content;
-  width: fit-content;
-  color: #000;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border-bottom: 2px solid #04c2c4;
-  margin-bottom: 25px;
-}
-.section-header p {
-  color: #4c4c4c;
-  font-family: Raleway;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 31px;
-  letter-spacing: 1.2px;
 }
 
 .landing-section-4 {

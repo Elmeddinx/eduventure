@@ -1,0 +1,27 @@
+.section-header {
+    margin-bottom: 60px;
+    h2 {
+        width: fit-content;
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-bottom: 2px solid #04c2c4;
+        margin-bottom: 25px;
+        @include mq(tablet-portrait-up) {
+            font-size: 26px;
+        }
+    }
+    p {
+        color: #4c4c4c;
+        font-family: Raleway;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 31px;
+        letter-spacing: 1.2px;
+    }
+}
