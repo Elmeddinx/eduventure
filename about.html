@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Eduventure</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-0 landing-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center d-none d-lg-flex" href="#">
+                <img src="./assets/img/logo.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="btn-group">
+                <div class="lang-dropdown">
+                    <div class="dropdown">
+                        <button class="btn bg-transparent dropdown-toggle poppins-regular" type="button"
+                            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="flag-icon">
+                                <img src="./assets/icons/az.svg" alt="AZ">
+                            </div> AZ
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"
+                            id="dropdownMenu">
+                            <li>
+                                <a class="dropdown-item poppins-regular" href="#" data-lang="en">
+                                    <div class="flag-icon">
+                                        <img src="./assets/icons/en.svg" alt="EN">
+                                    </div>
+                                    EN
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item poppins-regular" href="#" data-lang="ru">
+                                    <div class="flag-icon">
+                                        <img src="./assets/icons/ru.svg" alt="RU">
+                                    </div>
+                                    RU
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-success rounded-5 border-0 login-btn poppins-medium">Daxil olun</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link poppins-regular px-0" href="#">Biz kimik?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins-regular px-0" href="#">Elanlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins-regular px-0" href="#">Tədbirlər</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins-regular px-0" href="#">Vakansiyalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins-regular px-0" href="#">Əməkdaşlar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-header">
+        <div class="container">
+            <div class="about-header-top">
+                <div class="about-header-bg">
+                    <img src="./assets/img/img-06.png" alt="">
+                </div>
+                <div class="about-header-overlay">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li>
+                                <a href="./index.html">
+                                    <img src="./assets/icons/home-white.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                Biz kimik?
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-header-overlay-content">
+                        <h1 class="about-header-overlay-title">Lorem Ipsum is simply dummy text of the printing</h1>
+                        <p class="about-header-overlay-desc">Daha sadə və daha ağıllı onlayn öyrənmənin gücünü kəşf edin
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="about-header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card border-0 d-flex flex-column align-items-center">
+                                <span class="card-count">45</span>
+                                <p class="card-desc">Fənnlərimiz</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card border-0 d-flex flex-column align-items-center">
+                                <span class="card-count">15</span>
+                                <p class="card-desc">Müəllimələrimiz</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card border-0 d-flex flex-column align-items-center">
+                                <span class="card-count">12</span>
+                                <p class="card-desc">Əməkdaşlarımız</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section-1">
+        <div class="container">
+            <div class="section-header">
+                <h2>Haqqımızda Məlumat</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-5 title-container">
+                    <div class="about-section-1-title">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy
+                    </div>
+                    <div class="about-section-1-play-btn" id="play-button">
+                        <img src="./assets/icons/play-icon.svg" alt="">
+                        <p>Videonu başlat</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 video-container" id="video-container">
+                    <div class="about-section-1-video-cont">
+                        <video id="custom-video">
+                            <source src="./assets/videos/video-01.mp4" type="video/mp4">
+                        </video>
+                        <div class="about-section-1-play-btn-mb" id="play-button-mb">
+                            <img src="./assets/icons/play-icon-white.svg" alt="">
+                            <p>Videonu başlat</p>
+                        </div>
+                        <button id="close-video" class="close-video">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M0.21934 0.239345C0.359965 0.0988946 0.550589 0.0200052 0.74934 0.0200052C0.948091 0.0200052 1.13871 0.0988946 1.27934 0.239345L6.49934 5.45934L11.7193 0.239345C11.811 0.14062 11.9276 0.0684492 12.0569 0.0304351C12.1861 -0.00757909 12.3232 -0.0100287 12.4537 0.0233445C12.5843 0.0567177 12.7034 0.124678 12.7985 0.220066C12.8937 0.315453 12.9613 0.434735 12.9943 0.565345C13.0276 0.695727 13.0253 0.832668 12.9874 0.961811C12.9496 1.09095 12.8777 1.20754 12.7793 1.29935L7.55934 6.51935L12.7793 11.7393C12.8781 11.831 12.9502 11.9476 12.9883 12.0769C13.0263 12.2061 13.0287 12.3432 12.9953 12.4738C12.962 12.6043 12.894 12.7234 12.7986 12.8185C12.7032 12.9137 12.584 12.9813 12.4533 13.0143C12.323 13.0477 12.186 13.0453 12.0569 13.0074C11.9277 12.9696 11.8111 12.8977 11.7193 12.7993L6.49934 7.57935L1.27934 12.7993C1.13719 12.932 0.949095 13.0042 0.754703 13.0009C0.560311 12.9975 0.37482 12.9188 0.23734 12.7813C0.0998672 12.6439 0.0211531 12.4584 0.0177951 12.264C0.0144371 12.0696 0.0866975 11.8815 0.21934 11.7393L5.43934 6.51935L0.21934 1.29935C0.0788894 1.15872 0 0.968096 0 0.769345C0 0.570595 0.0788894 0.37997 0.21934 0.239345Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section-2">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hədəflərimiz</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./assets/img/img-01.png" alt="" class="card-img-top">
+                        </a>
+                        <div class="card-body border-0 bg-transparent">
+                            <a href="#">
+                                <p class="card-title">Lorem Ipsum is simply dummy</p>
+                            </a>
+                            <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500
+                            </p>
+                        </div>
+                        <a href="#" class="btn rounded-pill btn-style-1 ms-auto">Daha çox
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path
+                                        d="M0.688025 11.789L10.788 1.708V11H11.788V0H0.788026V1H10.081L2.57492e-05 11.1L0.688025 11.789Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./assets/img/img-01.png" alt="" class="card-img-top">
+                        </a>
+                        <div class="card-body border-0 bg-transparent">
+                            <a href="#">
+                                <p class="card-title">Lorem Ipsum is simply dummy</p>
+                            </a>
+                            <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500
+                            </p>
+                        </div>
+                        <a href="#" class="btn rounded-pill btn-style-1 ms-auto">Daha çox
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path
+                                        d="M0.688025 11.789L10.788 1.708V11H11.788V0H0.788026V1H10.081L2.57492e-05 11.1L0.688025 11.789Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card border-0">
+                        <a href="#">
+                            <img src="./assets/img/img-01.png" alt="" class="card-img-top">
+                        </a>
+                        <div class="card-body border-0 bg-transparent">
+                            <a href="#">
+                                <p class="card-title">Lorem Ipsum is simply dummy</p>
+                            </a>
+                            <p class="card-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500
+                            </p>
+                        </div>
+                        <a href="#" class="btn rounded-pill btn-style-1 ms-auto">Daha çox
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none">
+                                    <path
+                                        d="M0.688025 11.789L10.788 1.708V11H11.788V0H0.788026V1H10.081L2.57492e-05 11.1L0.688025 11.789Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="./assets/img/logo-white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="row">
+                            <ul class="col-sm-12 col-md-4 col-lg-3">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Biz kimik?</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Elanlar</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Tədbirlər</a>
+                                </li>
+                            </ul>
+                            <ul class="col-sm-12 col-md-4 col-lg-3">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Vakansiyalar</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Əməkdaşlar</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Şərtlər və qaydalar</a>
+                                </li>
+                            </ul>
+                            <ul class="col-sm-12 col-md-4 col-lg-3">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Müəllimələr</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Şagirdlər</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu-link">Dəstək</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="copyright-text">
+                    © 2024 Eduventure. Bütün hüquqlar qorunur
+                </span>
+                <div class="footer-social">
+                    <ul>
+                        <li class="footer-social-item">
+                            <a href="#" class="footer-social-link"><img src="./assets/icons/instagram.svg" alt=""></a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="footer-social-link"><img src="./assets/icons/facebook.svg" alt=""></a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="footer-social-link"><img src="./assets/icons/linkedin.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

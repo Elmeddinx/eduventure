@@ -66,3 +66,49 @@ var swiper = new Swiper(".landing-employee-swiper", {
     },
   },
 });
+
+
+const playButton = document.getElementById("play-button");
+const playButtonMb = document.getElementById("play-button-mb");
+const videoContainer = document.getElementById("video-container");
+const closeVideoButton = document.getElementById("close-video");
+const customVideo = document.getElementById("custom-video");
+const titleContainer = document.querySelector(".title-container");
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+
+if (playButton) {
+  playButton.addEventListener("click", () => {
+    closeVideoButton.style.display = "flex";
+    customVideo.play();
+    if (mediaQuery.matches) {
+      videoContainer.classList.remove("col-md-7");
+      videoContainer.classList.add("col-md-12");
+      titleContainer.style.display = "none";
+    }
+  });
+}
+if (playButtonMb) {
+  playButtonMb.addEventListener("click", () => {
+    if (mediaQuery.matches) {
+    } else {
+      closeVideoButton.style.display = "flex";
+      customVideo.play();
+      playButtonMb.style.display = "none";
+    }
+  });
+}
+if (closeVideoButton) {
+  closeVideoButton.addEventListener("click", () => {
+    customVideo.pause();
+    customVideo.currentTime = 0;
+    closeVideoButton.style.display = "none";
+    if (mediaQuery.matches) {
+      videoContainer.classList.add("col-md-7");
+      videoContainer.classList.remove("col-md-12");
+      titleContainer.style.display = "block";
+    } else {
+      playButtonMb.style.display = "flex";
+    }
+  });
+}

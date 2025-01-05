@@ -1,0 +1,43 @@
+.about-section-2 {
+    margin-bottom: 220px;
+    .row {
+        row-gap: 40px;
+        justify-content: center;
+    }
+    .card {
+        padding: 20px 16px 25px 16px;
+        border-radius: 12px;
+        background: #f5f5f5;
+        a {
+            text-decoration: none;
+        }
+        img {
+            border-radius: 12px;
+            object-fit: cover;
+            object-position: center;
+            height: 143px;
+            max-height: 143px;
+        }
+        .card-body {
+            padding: 0;
+            margin-top: 18px;
+            .card-title {
+                color: #000;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .card-desc {
+                color: #4c4c4c;
+                font-family: Raleway;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 31px; 
+                letter-spacing: 0.7px;
+            }
+        }
+    }
+}
