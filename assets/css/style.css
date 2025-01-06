@@ -1543,4 +1543,321 @@ footer .footer-bottom .footer-social-item {
 .parent-register-content form .password-to-text img {
   width: 18px;
   height: 18px;
+}
+
+.student-register {
+  margin: 80px 0 174px 0;
+}
+@media only screen and (max-width: 768px) {
+  .student-register {
+    margin: 40px 0 74px 0;
+  }
+}
+.student-register .step-container {
+  display: none;
+}
+.student-register .step-container.active {
+  display: block;
+}
+@media only screen and (max-width: 992px) {
+  .student-register .row {
+    min-width: 100%;
+  }
+}
+.student-register .row .img-card {
+  min-height: 779px;
+}
+@media only screen and (max-width: 992px) {
+  .student-register .row .img-card {
+    display: none;
+  }
+}
+.student-register .row .img-card .card {
+  height: 100%;
+  border-radius: 12px 0px 0px 12px;
+  overflow: hidden;
+}
+.student-register .row .img-card img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.student-register .row .content-card {
+  min-height: 779px;
+}
+@media only screen and (max-width: 992px) {
+  .student-register .row .content-card {
+    width: 100%;
+  }
+}
+.student-register .row .photo-upload-container {
+  margin-bottom: 32px;
+}
+.student-register .row .form-select {
+  max-height: 150px !important;
+  overflow-y: auto !important;
+}
+.student-register-content {
+  border-radius: 0px 12px 12px 0px;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px 45px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .student-register-content {
+    padding: 30px 20px 50px 20px;
+    background: #fff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .student-register-content {
+    padding: 30px 30px 50px 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .student-register-content {
+    padding: 30px 50px 45px 50px;
+  }
+}
+.student-register-content-steps {
+  color: #817a7a;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.student-register-content-title {
+  color: #000;
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 34px;
+}
+.student-register-content .btn-groups.btn-groups-top {
+  row-gap: 32px;
+}
+.student-register-content .btn-groups.btn-groups-top .btn {
+  border-radius: 12px;
+  background-color: #07898a;
+}
+.student-register-content .btn-groups.btn-groups-bottom {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.student-register-content .btn-groups.btn-groups-bottom.student-btns {
+  margin-top: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .student-register-content .btn-groups.btn-groups-bottom.student-btns {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 93px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .student-register-content .btn-groups.btn-groups-bottom {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+.student-register-content .btn {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .student-register-content .btn {
+    font-size: 18px;
+  }
+}
+.student-register-content .btn.rounded-pill {
+  width: 50%;
+  height: 57px;
+  background-color: #d9d9d9;
+  font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+  .student-register-content .btn.rounded-pill {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .student-register-content .btn.rounded-pill.back-btn {
+    width: 174px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .student-register-content .btn.rounded-pill.login-btn {
+    width: 168px;
+  }
+}
+.student-register-content .btn.active {
+  background-color: #04c2c4;
+}
+@media only screen and (max-width: 768px) {
+  .student-register-content form {
+    margin-top: 22px;
+  }
+}
+.student-register-content form .row {
+  row-gap: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .student-register-content form .row {
+    margin-bottom: 48px;
+  }
+}
+.student-register-content form .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.student-register-content form .custom-file-upload {
+  height: 52px;
+  margin-top: 10px;
+  margin-bottom: 11px;
+  border: 1px dashed #757575;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #e1e1e1;
+}
+.student-register-content form .custom-file-upload:hover {
+  background-color: #e9ecef;
+}
+.student-register-content form .preview-container {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+}
+.student-register-content form .preview-container .file-preview {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 992px) {
+  .student-register-content form .preview-container .file-preview {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .student-register-content form .preview-container .file-preview {
+    width: 48px;
+    height: 48px;
+  }
+}
+.student-register-content form .preview-container .change-file-btn,
+.student-register-content form .preview-container .delete-file-btn {
+  border-radius: 8px;
+  border: 0.3px dashed #5a5a5a;
+  background: rgba(255, 255, 255, 0);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  height: 36px;
+  padding: 9px 10px;
+}
+@media only screen and (min-width: 992px) {
+  .student-register-content form .preview-container .change-file-btn,
+  .student-register-content form .preview-container .delete-file-btn {
+    font-size: 10px;
+    padding: 9px 8px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .student-register-content form .preview-container .change-file-btn,
+  .student-register-content form .preview-container .delete-file-btn {
+    font-size: 11px;
+    padding: 9px 10px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .student-register-content form .preview-container .change-file-btn,
+  .student-register-content form .preview-container .delete-file-btn {
+    font-size: 12px;
+  }
+}
+.student-register-content form .preview-container .change-file-btn img,
+.student-register-content form .preview-container .delete-file-btn img {
+  width: 16px;
+  height: 16px;
+}
+@media only screen and (min-width: 992px) {
+  .student-register-content form .preview-container .change-file-btn img,
+  .student-register-content form .preview-container .delete-file-btn img {
+    width: 14px;
+    height: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .student-register-content form .preview-container .change-file-btn img,
+  .student-register-content form .preview-container .delete-file-btn img {
+    width: 16px;
+    height: 16px;
+  }
+}
+.student-register-content form .preview-container .change-file-btn {
+  color: #44860b;
+  margin-right: 8px;
+}
+.student-register-content form .preview-container .delete-file-btn {
+  color: #ff0b23;
+}
+.student-register-content form .form-label {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.student-register-content form .form-control,
+.student-register-content form .form-select {
+  height: 52px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #c1c1c1;
+}
+.student-register-content form .password-group {
+  position: relative;
+}
+.student-register-content form .password-group .form-control {
+  padding-right: 46px;
+}
+.student-register-content form .password-to-text {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.student-register-content form .password-to-text img {
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=style.css.map */

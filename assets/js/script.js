@@ -137,30 +137,75 @@ const previewImage = document.getElementById("previewImage");
 const changeButton = document.getElementById("changeButton");
 const deleteButton = document.getElementById("deleteButton");
 
-uploadPhoto.addEventListener("change", function () {
-  const file = this.files[0];
+if (uploadPhoto) {
+  uploadPhoto.addEventListener("change", function () {
+    const file = this.files[0];
 
-  const reader = new FileReader();
-  reader.onload = function (e) {
-    previewImage.src = e.target.result;
-    previewContainer.style.display = "flex";
-    uploadLabel.style.display = "none";
-    uploadSmall.style.display = "none";
-  };
-  reader.readAsDataURL(file);
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      previewImage.src = e.target.result;
+      previewContainer.style.display = "flex";
+      uploadLabel.style.display = "none";
+      uploadSmall.style.display = "none";
+    };
+    reader.readAsDataURL(file);
 
-});
+  });
+}
+if (changeButton) {
+  changeButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    uploadPhoto.value = null;
+    uploadPhoto.click();
+  });
+}
+if (deleteButton) {
+  deleteButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    uploadPhoto.value = null;
+    previewContainer.style.display = "none";
+    uploadLabel.style.display = "flex";
+    uploadSmall.style.display = "block";
+  });
+}
 
-changeButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  uploadPhoto.value = null;
-  uploadPhoto.click();
-});
+const step1 = document.getElementById("step1");
+const step2 = document.getElementById("step2");
+const nextStep = document.getElementById("nextStep");
+const prevStep = document.getElementById("prevStep");
 
-deleteButton.addEventListener("click", function (e) {
-  e.preventDefault();
-  uploadPhoto.value = null;
-  previewContainer.style.display = "none";
-  uploadLabel.style.display = "flex";
-  uploadSmall.style.display = "block";
-});
+if (nextStep) {
+  nextStep.addEventListener("click", function () {
+    step1.classList.remove("active");
+    step2.classList.add("active");
+  });
+}
+if (prevStep) {
+  prevStep.addEventListener("click", function () {
+    step2.classList.remove("active");
+    step1.classList.add("active");
+  });
+}
+
+const mobileNumberInput = document.getElementById('mobileNumber');
+if (mobileNumberInput) {
+  mobileNumberInput.addEventListener('input', function () {
+    const maxLength = 13; // +994XXXXXXXXX (13 simvol)
+    if (this.value.length > maxLength) {
+      this.value = this.value.slice(0, maxLength); // Maksimum uzunluğu kəsir
+    }
+
+    // Yalnız rəqəmlərə və '+' işarəsinə icazə verilir
+    this.value = this.value.replace(/[^0-9+]/g, '');
+
+    // '+' yalnız nömrənin əvvəlində ola bilər
+    if (this.value.indexOf('+') > 0) {
+      this.value = this.value.replace(/\+/g, ''); // '+' işarəsini çıxarır
+    }
+
+    // '+994' prefiksi ilə başlamasını təmin edir
+    if (!this.value.startsWith('+994')) {
+      this.value = '+994';
+    }
+  });
+}
