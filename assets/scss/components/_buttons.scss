@@ -5,7 +5,7 @@
     align-items: center;
     column-gap: 10px;
     width: fit-content;
-    transition: all .3s;
+    transition: all 0.3s;
     div {
         width: 33.78px;
         height: 33.78px;
@@ -14,21 +14,66 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all .3s;
+        transition: all 0.3s;
     }
     &:hover {
         background-color: #04c2c4;
         color: #fff;
-        transition: all .3s;
+        transition: all 0.3s;
         div {
             background-color: #fff;
-            transition: all .3s;
+            transition: all 0.3s;
             svg {
                 path {
                     fill: #04c2c4;
-                    transition: all .3s;
+                    transition: all 0.3s;
                 }
             }
         }
+    }
+}
+.btn-back {
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    background: #d9d9d9;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &:hover {
+        background: #d9d9d9;
+        color: #fff;
+    }
+    @include mq (tablet-portrait-up) {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+.btn-style-2 {
+    display: flex;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    background: #04c2c4;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &:hover {
+        background: #04c2c4;
+        color: #fff;
+    }
+    @include mq (tablet-portrait-up) {
+        width: 100%;
+        font-size: 16px;
     }
 }

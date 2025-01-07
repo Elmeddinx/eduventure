@@ -190,22 +190,31 @@ if (prevStep) {
 const mobileNumberInput = document.getElementById('mobileNumber');
 if (mobileNumberInput) {
   mobileNumberInput.addEventListener('input', function () {
-    const maxLength = 13; // +994XXXXXXXXX (13 simvol)
+    const maxLength = 13;
     if (this.value.length > maxLength) {
-      this.value = this.value.slice(0, maxLength); // Maksimum uzunluğu kəsir
+      this.value = this.value.slice(0, maxLength);
     }
 
-    // Yalnız rəqəmlərə və '+' işarəsinə icazə verilir
     this.value = this.value.replace(/[^0-9+]/g, '');
 
-    // '+' yalnız nömrənin əvvəlində ola bilər
     if (this.value.indexOf('+') > 0) {
-      this.value = this.value.replace(/\+/g, ''); // '+' işarəsini çıxarır
+      this.value = this.value.replace(/\+/g, '');
     }
 
-    // '+994' prefiksi ilə başlamasını təmin edir
     if (!this.value.startsWith('+994')) {
       this.value = '+994';
+    }
+  });
+}
+const hamburgerMenu = document.getElementById("hamburger-menu");
+const sidebarMenu = document.getElementById("sidebar-menu");
+if (hamburgerMenu) {
+  hamburgerMenu.addEventListener("click", function () {
+    sidebarMenu.classList.toggle("active");
+  })
+  document.addEventListener("click", (event) => {
+    if (!sidebarMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+      sidebarMenu.classList.remove("active");
     }
   });
 }

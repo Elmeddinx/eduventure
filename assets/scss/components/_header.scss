@@ -1,0 +1,25 @@
+.main-header {
+    width: 100%;
+    margin-top: 25px;
+    .hamburger-menu {
+        cursor: pointer;
+        width: fit-content;
+        @include mq(tablet-portrait-down) {
+            display: none;
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .profile-picture {
+        margin-left: 14px;
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
