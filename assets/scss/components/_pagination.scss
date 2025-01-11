@@ -1,0 +1,52 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    @include mq(tablet-portrait-up) {
+        justify-content: flex-start;
+    }
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination .page-item .page-link {
+    width: 31px;
+    border: 0.3px solid #5a5a5a;
+    border-radius: 8px;
+    padding: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mq(phone-sm) {
+        width: 27px;
+        padding: 7px;
+    }
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #07898a;
+    color: white;
+    border: none;
+}
+.pagination .page-item:first-child,
+.pagination .page-item:last-child {
+    margin: 0 !important;
+}
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+    width: unset;
+    border: none !important;
+    background-color: transparent;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

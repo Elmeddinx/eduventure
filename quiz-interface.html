@@ -232,125 +232,94 @@
             </div>
         </header>
         <div class="container">
-            <div class="inner-navigation">
-                <div class="page-title">
-                    <a href="#">
-                        <img src="./assets/icons/arrow-left.svg" alt="">
-                        <h2>Testlər</h2>
-                    </a>
-                </div>
-                <div class="page-controls">
-                    <select name="page-controls" id="page-controls">
-                        <option value="Bu gün">Bu gün</option>
-                        <option value="Sabah">Sabah</option>
-                        <option value="Bayramda">Bayramda</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row tests-row">
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
+            <div class="quiz-container">
+                <div class="quiz-nav">
+                    <div class="quiz-title">
+                        <h3>Present perfect tence</h3>
+                        <div class="quiz-date">
+                            <p>Dec 12 2024</p>
                         </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
+                    </div>
+                    <div class="quiz-timer green">
+                        <div class="quiz-timer-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M7.99967 1.83301C7.1242 1.83301 6.25729 2.00545 5.44845 2.34048C4.63961 2.67551 3.90469 3.16657 3.28563 3.78563C2.03539 5.03587 1.33301 6.73156 1.33301 8.49967C1.33301 10.2678 2.03539 11.9635 3.28563 13.2137C3.90469 13.8328 4.63961 14.3238 5.44845 14.6589C6.25729 14.9939 7.1242 15.1663 7.99967 15.1663C9.76778 15.1663 11.4635 14.464 12.7137 13.2137C13.964 11.9635 14.6663 10.2678 14.6663 8.49967C14.6663 7.6242 14.4939 6.75729 14.1589 5.94845C13.8238 5.13961 13.3328 4.40469 12.7137 3.78563C12.0947 3.16657 11.3597 2.67551 10.5509 2.34048C9.74206 2.00545 8.87515 1.83301 7.99967 1.83301ZM10.7997 11.2997L7.33301 9.16634V5.16634H8.33301V8.63301L11.333 10.433L10.7997 11.2997Z"
+                                    fill="#03AF11" />
+                            </svg>
+                            <p class="quiz-timer-text">
+                                89dq 50sn
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24" fill="none">
+                                    <path d="M9.54801 17.4198L8.48701 18.4798L2.70801 12.7028C2.61486 12.6102 2.54093 12.5001 2.49048 12.3789C2.44003 12.2576 2.41406 12.1276 2.41406 11.9963C2.41406 11.8649 2.44003 11.7349 2.49048 11.6137C2.54093 11.4924 2.61486 11.3823 2.70801 11.2898L8.48701 5.50977L9.54701 6.56977L4.12301 11.9948L9.54801 17.4198Z" fill="black"/>
+                                  </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">9</a></li>
+                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                    <li class="page-item"><a class="page-link" href="#">11</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                    <li class="page-item"><a class="page-link" href="#">13</a></li>
+                    <li class="page-item"><a class="page-link" href="#">14</a></li>
+                    <li class="page-item"><a class="page-link" href="#">15</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24" fill="none">
+                                    <path d="M2.45199 6.58023L3.51299 5.52024L9.29199 11.2972C9.38514 11.3898 9.45907 11.4999 9.50952 11.6211C9.55997 11.7424 9.58594 11.8724 9.58594 12.0037C9.58594 12.1351 9.55997 12.2651 9.50952 12.3863C9.45907 12.5076 9.38514 12.6177 9.29199 12.7102L3.51299 18.4902L2.45299 17.4302L7.87699 12.0052L2.45199 6.58023Z" fill="black"/>
+                                  </svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="question-wrapper">
+                    <div class="question-progress">
+                        <div class="quiz-status">
+                            <p>Suallar: </p>
+                            <span>9</span>/<span>25</span>
                         </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
+                        <div class="progress-bar">
+                            <div class="progress-line" style="width: 36%;"></div>
+                        </div>
+                    </div>
+                    <div class="question-title">
+                        <h3>Sual 9</h3>
+                    </div>
+                    <div class="question-description">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
-                        </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
-                        </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
-                        </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
-                        </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
-                        </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                    <div class="card">
-                        <div class="card-level">
-                            <div class="card-level-inner">
-                                <p class="card-level-text">Çətin səviyyə</p>
-                            </div>
-                        </div>
-                        <img src="./assets/icons/doc.svg" alt="" class="card-icon">
-                        <h3 class="card-title">Present perfect tense</h3>
-                        <p class="card-details"><img src="./assets/icons/clock.svg" alt=""><span class="test-minute">25</span> minutes / <span class="test-question">25</span> sual</p>
-                        <a href="./exam.html" class="btn card-btn">İmhatana daxil ol <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
-                    </div>
+                <ul class="options-container">
+                    <li class="option-item">
+                        <input type="radio" name="answer" id="option-a" value="A">
+                        <label for="option-a"><span class="custom-radio"></span> A) Lorem Ipsum</label>
+                    </li>
+                    <li class="option-item">
+                        <input type="radio" name="answer" id="option-b" value="B">
+                        <label for="option-b"><span class="custom-radio"></span> B) Lorem Ipsum</label>
+                    </li>
+                    <li class="option-item">
+                        <input type="radio" name="answer" id="option-c" value="C">
+                        <label for="option-c"><span class="custom-radio"></span> C) Lorem Ipsum</label>
+                    </li>
+                    <li class="option-item">
+                        <input type="radio" name="answer" id="option-d" value="D">
+                        <label for="option-d"><span class="custom-radio"></span> D) Lorem Ipsum</label>
+                    </li>
+                </ul>
+                
+                <div class="btn-groups d-flex btn-groups-bottom parent-btns">
+                    <a href="#" class="btn rounded-pill btn-back">Geri qayıt</a>
+                    <a href="#" class="btn rounded-pill btn-style-2">Dəvam et</a>
                 </div>
             </div>
         </div>
