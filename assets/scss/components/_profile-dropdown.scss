@@ -7,6 +7,7 @@
     min-height: 120px;
     display: none;
     transition: all 0.3s;
+    z-index: 888;
     &.active {
         display: block;
         transition: all 0.3s;

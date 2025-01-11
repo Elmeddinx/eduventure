@@ -5,7 +5,7 @@
         cursor: pointer;
         width: fit-content;
         margin-right: auto;
-        @include mq(tablet-portrait-down) {
+        @include mq(tablet-landscape-down) {
             display: none;
         }
     }

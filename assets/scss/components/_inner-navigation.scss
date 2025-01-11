@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 21px;
-    @include mq(tablet-landscape-up) {
+    @include mq(tablet-portrait-up) {
         flex-wrap: wrap;
         row-gap: 32px;
     }

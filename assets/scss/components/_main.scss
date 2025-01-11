@@ -1,7 +1,7 @@
 .main {
     width: calc(100% - 271px);
     margin-left: 271px;
-    @include mq(tablet-portrait-up) {
+    @include mq(tablet-landscape-up) {
         margin-left: 0;
         width: 100%;
     }
