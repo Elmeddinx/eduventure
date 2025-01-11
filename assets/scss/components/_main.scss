@@ -1,4 +1,20 @@
 .main {
     width: calc(100% - 271px);
     margin-left: 271px;
+    @include mq(tablet-portrait-up) {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .container {
+        @include mq(tablet-portrait-down) {
+            max-width: calc(100% - 35px);
+        }
+        @include mq(tablet-landscape-down) {
+            max-width: calc(100% - 75px);
+        }
+        @include mq(desktop-down) {
+            max-width: calc(100% - 130px);
+        }
+    }
 }

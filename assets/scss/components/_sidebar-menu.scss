@@ -6,24 +6,37 @@
     left: 0;
     top: 0;
     bottom: 0;
-    border-right: 0.5px solid #5a5a5a;
-    background-color: #f5f5f5;
-    padding: 20px;
     box-sizing: border-box;
+    z-index: 9999;
     &.active {
         transform: translateX(0);
         transition: transform 0.3s;
+        .sidebar-menu-inner {
+            transform: translateX(0);
+            transition: transform 0.45s;
+        }
     }
     @include mq(tablet-portrait-up) {
+        max-width: 100%;
         transform: translateX(-100%);
         transition: transform 0.3s;
+        background-color: rgba(0, 0, 0, 0.6);
     }
     &-inner {
+        max-width: 271px;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border-right: 0.5px solid #5a5a5a;
+        background-color: #f5f5f5;
+        padding: 20px;
+        @include mq(tablet-portrait-up) {
+            transform: translateX(-100%);
+            transition: transform 0.45s;
+            max-width: 241px;
+        }
     }
     &-logo {
         img {
@@ -41,12 +54,28 @@
     }
     &-item {
         list-style: none;
+
         &.active-item {
             padding: 10px;
             border-radius: 8px;
             background-color: #d9eeee;
+            @include mq(tablet-portrait-up) {
+                background-color: transparent;
+                border-radius: unset;
+            }
             a {
                 color: #07898a;
+                p {
+                    position: relative;
+                    @include mq(tablet-portrait-up) {
+                        &::before {
+                            content: "•";
+                            color: #07898a;
+                            font-size: 16px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
             }
             path {
                 stroke: #07898a;
@@ -65,6 +94,11 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        svg {
+            @include mq(tablet-portrait-up) {
+                display: none;
+            }
+        }
         p {
             margin-bottom: 0;
         }
@@ -78,7 +112,7 @@
         background: #fff;
         padding: 10px 5px;
         border: none;
-        
+
         p {
             margin-bottom: 0;
             color: #838383;

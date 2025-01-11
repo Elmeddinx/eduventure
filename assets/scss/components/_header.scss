@@ -4,6 +4,7 @@
     .hamburger-menu {
         cursor: pointer;
         width: fit-content;
+        margin-right: auto;
         @include mq(tablet-portrait-down) {
             display: none;
         }
@@ -11,9 +12,12 @@
     .container {
         display: flex;
         justify-content: flex-end;
+        position: relative;
     }
     .profile-picture {
-        margin-left: 14px;
+        margin-left: 14px;        
+        user-select: none;
+        cursor: pointer;
         img {
             width: 40px;
             height: 40px;
