@@ -1,0 +1,103 @@
+.exam-container {
+    margin-top: 60px;
+    .row {
+        @include mq(tablet-landscape-up) {
+            justify-content: center;
+        }
+        .exam-img {
+            @include mq(tablet-portrait-up) {
+                padding: 0 16px !important;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 12px 0px 0px 12px;
+            }
+        }
+        .exam-details {
+            @include mq(tablet-portrait-up) {
+                padding: 0 16px !important;
+            }
+        }
+        .card {
+            background: #fafafa;
+            border-radius: 0px 12px 12px 0px;
+            padding: 63px;
+            
+            @include mq(tablet-landscape-up) {
+                padding: 63px 0;
+                background: #fff;
+            }
+            &-title {
+                color: #3a3a3a;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 31px;
+                letter-spacing: 1.05px;
+            }
+            &-desc {
+                color: #757575;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 29px;
+                letter-spacing: 0.8px;
+                margin-top: 16px;
+                margin-bottom: 12px;
+            }
+            &-details {
+                display: flex;
+                align-items: center;
+                column-gap: 29px;
+                &-question {
+                    color: #3a3a3a;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 31px;
+                    letter-spacing: 0.8px;
+                    &-count {
+                    }
+                }
+                &-time {
+                    color: #3a3a3a;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 5px;
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+            .card-btn {
+                color: #fff;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 999px;
+                background: #ff9f41;
+                padding: 10px 30px;
+                margin-top: 42px;
+                @include mq(tablet-portrait-up) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -2827,4 +2827,113 @@ footer .footer-bottom .footer-social-item {
 .student-register-content form .password-to-text img {
   width: 18px;
   height: 18px;
+}
+
+.exam-container {
+  margin-top: 60px;
+}
+@media only screen and (max-width: 992px) {
+  .exam-container .row {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .exam-container .row .exam-img {
+    padding: 0 16px !important;
+  }
+}
+.exam-container .row .exam-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 12px 0px 0px 12px;
+}
+@media only screen and (max-width: 768px) {
+  .exam-container .row .exam-details {
+    padding: 0 16px !important;
+  }
+}
+.exam-container .row .card {
+  background: #fafafa;
+  border-radius: 0px 12px 12px 0px;
+  padding: 63px;
+}
+@media only screen and (max-width: 992px) {
+  .exam-container .row .card {
+    padding: 63px 0;
+    background: #fff;
+  }
+}
+.exam-container .row .card-title {
+  color: #3a3a3a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 1.05px;
+}
+.exam-container .row .card-desc {
+  color: #757575;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.8px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+.exam-container .row .card-details {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+}
+.exam-container .row .card-details-question {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.8px;
+}
+.exam-container .row .card-details-time {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.exam-container .row .card-details-time img {
+  width: 18px;
+  height: 18px;
+}
+.exam-container .row .card .card-btn {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 999px;
+  background: #ff9f41;
+  padding: 10px 30px;
+  margin-top: 42px;
+}
+@media only screen and (max-width: 768px) {
+  .exam-container .row .card .card-btn {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
