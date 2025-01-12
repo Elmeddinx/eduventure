@@ -1,0 +1,179 @@
+.quiz-result-container {
+    border-radius: 12px;
+    border: 0.2px solid #000;
+    margin-top: 28px;
+    padding: 50px 30px 45px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(tablet-portrait-up) {
+        border: none;
+        padding: 0 4px;
+    }
+    .quiz-result-inner {
+        width: 100%;
+        max-width: 828px;
+        .quiz-result-title {
+            color: #000;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 31px;
+            letter-spacing: 1.2px;
+            margin-bottom: 0;
+        }
+        .quiz-result-desc {
+            color: #000;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 31px;
+            letter-spacing: 0.7px;
+            margin-bottom: 0;
+        }
+        .row {
+            margin-top: 12px;
+            margin-bottom: 42px;
+            align-items: stretch;
+            row-gap: 12px;
+            @include mq(tablet-landscape-down) {
+                row-gap: 24px;
+            }
+            @include mq(desktop-down) {
+                row-gap: 12px;
+            }
+            @include mq(tablet-portrait-up) {
+                row-gap: 24px;
+            }
+            .card {
+                height: 100%;
+                border-radius: 12px;
+                background: #fff;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                padding: 20px 10px;
+                column-gap: 17px;
+                align-items: center;
+                justify-content: center;
+                row-gap: 10px;
+                .card-title {
+                    color: #292727;
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 31px;
+                    letter-spacing: 1.2px;
+                    margin-bottom: 0;
+                }
+                .card-desc {
+                    color: #292727;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 31px;
+                    letter-spacing: 0.9px;
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 6px;
+                    @include mq(phone-sm) {
+                        font-size: 16px;
+                    }
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                &.profile-card {
+                    padding: 16px;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    .card-left {
+                        width: fit-content;
+                        img {
+                            width: 105px;
+                            height: 105px;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: 999px;
+                            border: 3px solid #fff;
+                            @include mq(phone-only) {
+                                width: 75px;
+                                height: 75px;
+                            }
+                            @include mq(phone-sm) {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
+                    }
+                    .card-right {
+                        width: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 6px;
+                        .card-title {
+                            color: #000;
+                            font-family: Poppins;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 31px;
+                            letter-spacing: 0.9px;
+                            margin-bottom: 0;
+                            @include mq(phone-sm) {
+                                font-size: 15px;
+                                line-height: 24px;
+                            }
+                        }
+                        .detail-1,
+                        .detail-2,
+                        .detail-3 {
+                            color: #000;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 31px;
+                            letter-spacing: 0.7px;
+                            margin-bottom: 0;
+                            span {
+                                color: #000;
+                                font-family: Poppins;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 31px;
+                                letter-spacing: 0.7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-groups {
+        column-gap: 11px;
+
+        @include mq(tablet-portrait-up) {
+            width: 100%;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-bottom: 57px;
+        }
+        .btn-style-2 {
+            padding: 10px 30px;
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
+        }
+    }
+}
