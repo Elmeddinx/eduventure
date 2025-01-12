@@ -255,7 +255,6 @@ if (progressBars) {
     const totalQuestions = parseInt(progressBar.querySelector('.total-questions').textContent);
     const progressLine = progressBar.querySelector('.progress-line');
     const progressPercentage = (currentQuestion / totalQuestions) * 100;
-    console.log("currentQuestion: " + currentQuestion + " - totalQuestions : " + totalQuestions + " - progressPercentage: " + progressPercentage)
     progressLine.style.width = `${progressPercentage}%`;
   });
 }
