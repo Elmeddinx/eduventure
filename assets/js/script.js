@@ -255,3 +255,17 @@ if (progressBars) {
     progressLine.style.width = `${progressPercentage}%`;
   });
 }
+
+const selectBox = document.querySelector('.data-question-select-box select');
+if (selectBox) {
+  selectBox.addEventListener('change', (event) => {
+    const selectedValue = event.target.value;
+    const targetContainer = document.querySelector(`.question-container[data-question-index="${selectedValue}"]`);
+    if (targetContainer) {
+      targetContainer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  });
+}
