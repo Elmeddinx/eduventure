@@ -114,19 +114,23 @@ if (closeVideoButton) {
 }
 
 
-const password = document.getElementById("password");
-const passwordEye = document.getElementById("passwordEye");
-if (password && passwordEye) {
-  passwordEye.addEventListener("click", function () {
-    if (password.type === "password") {
-      password.type = "text";
-      passwordEye.src = "./assets/icons/eye.svg";
-    } else {
-      password.type = "password";
-      passwordEye.src = "./assets/icons/eye-off.svg";
-    }
-  });
-}
+document.querySelectorAll('.password-group').forEach((group) => {
+  const passwordInput = group.querySelector('input[type="password"]');
+  const passwordEye = group.querySelector('.passwordEye');
+
+  if (passwordInput && passwordEye) {
+    passwordEye.addEventListener('click', function () {
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordEye.src = './assets/icons/eye.svg';
+      } else {
+        passwordInput.type = 'password';
+        passwordEye.src = './assets/icons/eye-off.svg';
+      }
+    });
+  }
+});
+
 
 
 const uploadPhoto = document.getElementById("upload-photo");
@@ -266,6 +270,21 @@ if (selectBox) {
         behavior: 'smooth',
         block: 'start',
       });
+    }
+  });
+}
+
+const fileInput = document.getElementById('settings-file-input');
+const fileProfilePicture = document.getElementById('settings-profile-picture');
+if (fileInput) {
+  fileInput.addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        fileProfilePicture.src = e.target.result
+      };
+      reader.readAsDataURL(file);
     }
   });
 }
