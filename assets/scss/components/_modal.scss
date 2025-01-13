@@ -1,0 +1,54 @@
+.modal {
+    margin-left: 271px;
+    width: calc(100% - 271px);
+    @include mq(tablet-landscape-up) {
+        width: 100%;
+        margin-left: 0;
+    }
+    .modal-body {
+        padding: 40px;
+        @include mq(tablet-landscape-up) {
+            padding: 15px;
+        }
+    }
+    .modal-title {
+        color: #000;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 31px;
+        letter-spacing: 0.9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mq(phone-only) {
+            font-size: 14px;
+        }
+        @include mq(phone-sm) {
+            font-size: 13px;
+        }
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .btn-groups {
+        justify-content: center;
+        column-gap: 11px;
+        margin-top: 32px;
+        @include mq(tablet-landscape-up) {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .btn {
+            padding: 10px 60px;
+        }
+        .btn-back {
+            background-color: #c1c1c1;
+        }
+        .btn-style-2 {
+            background-color: #ff0b23;
+        }
+    }
+}

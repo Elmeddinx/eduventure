@@ -1340,6 +1340,72 @@ footer .footer-bottom .footer-social-item {
   background-color: #07898a;
 }
 
+.modal {
+  margin-left: 271px;
+  width: calc(100% - 271px);
+}
+@media only screen and (max-width: 992px) {
+  .modal {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.modal .modal-body {
+  padding: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .modal .modal-body {
+    padding: 15px;
+  }
+}
+.modal .modal-title {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 480px) {
+  .modal .modal-title {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .modal .modal-title {
+    font-size: 13px;
+  }
+}
+.modal .modal-title img {
+  width: 24px;
+  height: 24px;
+}
+.modal .btn-groups {
+  justify-content: center;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+  margin-top: 32px;
+}
+@media only screen and (max-width: 992px) {
+  .modal .btn-groups {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+.modal .btn-groups .btn {
+  padding: 10px 60px;
+}
+.modal .btn-groups .btn-back {
+  background-color: #c1c1c1;
+}
+.modal .btn-groups .btn-style-2 {
+  background-color: #ff0b23;
+}
+
 .landing-section-1 {
   padding: 120px 0;
 }
