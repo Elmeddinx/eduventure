@@ -26,4 +26,10 @@
             object-position: center;
         }
     }
+    .notification-block {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 14px;
+    }
 }

@@ -223,6 +223,25 @@ if (hamburgerMenu) {
     }
   });
 }
+const notificationBlock = document.getElementById("notification-block");
+const notificationPanel = document.getElementById("notification-panel");
+const notificationClose = document.getElementById("notification-close");
+const notificationPanelContent = document.getElementById("notification-panel-content");
+if (notificationBlock) {
+  notificationBlock.addEventListener("click", function () {
+    notificationPanel.classList.toggle("active");
+  })
+  notificationClose.addEventListener("click", function () {
+    notificationPanel.classList.remove("active");
+  })
+  document.addEventListener("click", (event) => {
+    if (!notificationPanelContent.contains(event.target) && !notificationBlock.contains(event.target)) {
+      notificationPanel.classList.remove("active");
+    }
+  });
+}
+
+
 const profilePicture = document.getElementById("profile-picture");
 const profilePictureDropdown = document.getElementById("profile-picture-dropdown");
 if (profilePicture) {

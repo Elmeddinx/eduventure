@@ -206,6 +206,9 @@
                             </li>
                         </ul>
                     </div>
+                </div>                
+                <div class="notification-block" id="notification-block">
+                    <img src="./assets/icons/notification.svg" alt="">
                 </div>
                 <div class="profile-picture" id="profile-picture">
                     <img src="./assets/img/profile-picture.png" alt="">
@@ -286,27 +289,32 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label for="id" class="form-label">ID</label>
-                                            <input autocomplete="false" type="text" class="form-control" id="id" placeholder="Text">
+                                            <input autocomplete="false" type="text" class="form-control" id="id"
+                                                placeholder="Text">
                                         </div>
                                         <div class="col-md-6">
                                             <label for="surname" class="form-label">Soyad</label>
-                                            <input autocomplete="false" type="text" class="form-control" id="surname" placeholder="Text">
+                                            <input autocomplete="false" type="text" class="form-control" id="surname"
+                                                placeholder="Text">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label for="name" class="form-label">Ad</label>
-                                            <input autocomplete="false" type="text" class="form-control" id="name" placeholder="Text">
+                                            <input autocomplete="false" type="text" class="form-control" id="name"
+                                                placeholder="Text">
                                         </div>
                                         <div class="col-md-6">
                                             <label for="father-name" class="form-label">Ata adı</label>
-                                            <input autocomplete="false" type="text" class="form-control" id="father-name" placeholder="Text">
+                                            <input autocomplete="false" type="text" class="form-control"
+                                                id="father-name" placeholder="Text">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label for="mobile" class="form-label">Mobil nömrə</label>
-                                            <input autocomplete="false" type="tel" class="form-control" id="mobile" placeholder="+994">
+                                            <input autocomplete="false" type="tel" class="form-control" id="mobile"
+                                                placeholder="+994">
                                         </div>
                                     </div>
                                 </form>
@@ -319,8 +327,8 @@
                                     <div class="form-group">
                                         <label for="current-password" class="form-label">Cari Şifrə</label>
                                         <div class=" password-group">
-                                            <input autocomplete="false" type="password" class="form-control" id="current-password"
-                                                placeholder="Köhnə şifrəni qeyd et">
+                                            <input autocomplete="false" type="password" class="form-control"
+                                                id="current-password" placeholder="Köhnə şifrəni qeyd et">
                                             <div class="password-to-text">
                                                 <img src="./assets/icons/eye-off.svg" alt="" class="passwordEye">
                                             </div>
@@ -329,8 +337,8 @@
                                     <div class="form-group">
                                         <label for="new-password" class="form-label">Yeni Şifrə</label>
                                         <div class=" password-group">
-                                            <input autocomplete="false" type="password" class="form-control" id="new-password"
-                                                placeholder="Yeni şifrəni təyin et">
+                                            <input autocomplete="false" type="password" class="form-control"
+                                                id="new-password" placeholder="Yeni şifrəni təyin et">
                                             <div class="password-to-text">
                                                 <img src="./assets/icons/eye-off.svg" alt="" class="passwordEye">
                                             </div>
@@ -339,17 +347,56 @@
                                     <div class="form-group">
                                         <label for="confirm-password" class="form-label">Yeni Şifrəni Təkrar
                                             Yazın</label>
-                                        <input autocomplete="false" type="password" class="form-control" id="confirm-password" placeholder="Yeni şifrəni təkrarla">
+                                        <input autocomplete="false" type="password" class="form-control"
+                                            id="confirm-password" placeholder="Yeni şifrəni təkrarla">
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    
-                <div class="btn-groups d-flex btn-groups-bottom parent-btns">
-                    <a href="#" class="btn rounded-pill btn-back">Ləğv edin</a>
-                    <a href="./quiz-results-details.html" class="btn rounded-pill btn-style-2">Yadda saxla</a>
+
+                    <div class="btn-groups d-flex btn-groups-bottom parent-btns">
+                        <a href="#" class="btn rounded-pill btn-back">Ləğv edin</a>
+                        <a href="./quiz-results-details.html" class="btn rounded-pill btn-style-2">Yadda saxla</a>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="notification-panel" id="notification-panel">
+            <div class="notification-panel-content" id="notification-panel-content">
+                <div class="notification-panel-header">
+                    <h3 class="notification-panel-title">Bildirişlər</h3>
+                    <div class="notification-panel-close" id="notification-close">
+                        <img src="./assets/icons/close.svg" alt="">
+                    </div>
+                </div>
+                <div class="notification-panel-body">
+                    <a href="#" class="notification">
+                        <div class="notification-left">
+                            <div class="notification-left-img">
+                                <img src="./assets/img/notification-img.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notification-right">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">İmtahan nəticəsi</h4>
+                                <div class="notification-time notification-time-mb">
+                                    <img src="./assets/icons/time-gray.svg" alt="">
+                                    2 saat əvvəl
+                                </div>
+                                <p class="notification-header-desc">Fənn: <span>İngilis dili</span></p>
+                                <p class="notification-header-desc">Mövzu: <span>Present perfect</span></p>
+                            </div>
+                            <div class="notification-status-bar">
+                                <div class="notification-time notification-time-lg">
+                                    <img src="./assets/icons/time-gray.svg" alt="">
+                                    2 saat əvvəl
+                                </div>
+
+                                <div class="notification-status"></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
