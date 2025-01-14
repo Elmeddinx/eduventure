@@ -1061,6 +1061,9 @@ footer .footer-bottom .footer-social-item {
   width: 20px;
   height: 20px;
 }
+.tests-row.results-row .card .card-title {
+  font-size: 14px;
+}
 
 .pagination {
   display: flex;
@@ -1142,7 +1145,7 @@ footer .footer-bottom .footer-social-item {
 .notification-panel {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;

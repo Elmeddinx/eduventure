@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Eduventure</title>
+</head>
+
+<body>
+
+    <div class="sidebar-menu" id="sidebar-menu">
+        <div class="sidebar-menu-inner" id="sidebar-menu-inner">
+            <div class="sidebar-menu-logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+            <div class="sidebar-menu-content">
+                <ul class="sidebar-menu-container">
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M13.3332 6.02622V2.56022C13.3332 2.38341 13.2629 2.21384 13.1379 2.08882C13.0129 1.96379 12.8433 1.89355 12.6665 1.89355H3.33317C3.15636 1.89355 2.98679 1.96379 2.86177 2.08882C2.73674 2.21384 2.6665 2.38341 2.6665 2.56022V14.5602C2.6665 14.737 2.73674 14.9066 2.86177 15.0316C2.98679 15.1566 3.15636 15.2269 3.33317 15.2269H6.6665"
+                                    stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.33301 5.22656H9.66634M5.33301 7.5599H6.99967" stroke="#838383"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M11.3333 15.2272C9.49233 15.2272 8 13.7349 8 11.8939C8 10.0529 9.49233 8.56055 11.3333 8.56055C13.1743 8.56055 14.6667 10.0529 14.6667 11.8939C14.6667 13.7349 13.1743 15.2272 11.3333 15.2272Z"
+                                    stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9 9.56055L13.6667 14.2272" stroke="#838383" stroke-linecap="round" />
+                                <path
+                                    d="M8 11.8939C8 10.0529 9.49233 8.56055 11.3333 8.56055M11.3333 15.2272C13.1743 15.2272 14.6667 13.7349 14.6667 11.8939"
+                                    stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p>Şərtlər və qaydalar</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M8.00016 15.2269V4.56022C8.00016 3.30289 8.00016 2.67489 7.6095 2.28422C7.21883 1.89355 6.59083 1.89355 5.3335 1.89355H4.00016C2.74283 1.89355 2.11483 1.89355 1.72416 2.28422C1.3335 2.67489 1.3335 3.30289 1.3335 4.56022V12.5602C1.3335 13.8176 1.3335 14.4456 1.72416 14.8362C2.11483 15.2269 2.74283 15.2269 4.00016 15.2269H8.00016ZM8.00016 15.2269H12.0002C13.2575 15.2269 13.8855 15.2269 14.2762 14.8362C14.6668 14.4456 14.6668 13.8176 14.6668 12.5602V8.56022C14.6668 7.30289 14.6668 6.67489 14.2762 6.28422C13.8855 5.89355 13.2575 5.89355 12.0002 5.89355H8.00016M12.3335 11.2269H10.3335M12.3335 8.56022H10.3335M5.66683 9.89355H3.66683M5.66683 7.22689H3.66683M5.66683 4.56022H3.66683"
+                                    stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p>Reytinq</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M2 3.22754V12.5609C2 12.9145 2.14048 13.2536 2.39052 13.5037C2.64057 13.7537 2.97971 13.8942 3.33333 13.8942H12.6667C13.0203 13.8942 13.3594 13.7537 13.6095 13.5037C13.8595 13.2536 14 12.9145 14 12.5609V5.89421H11.3333"
+                                    stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M2 3.22754H11.3333V12.5609C11.3333 12.9145 11.4738 13.2536 11.7239 13.5037C11.9739 13.7537 12.313 13.8942 12.6667 13.8942M8.66667 5.89421H4.66667M8.66667 8.56087H6"
+                                    stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p>Xəbərlər</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.6668 3.72116V5.89383C12.9294 5.89383 13.1895 5.94556 13.4321 6.04607C13.6748 6.14658 13.8953 6.29389 14.081 6.47961C14.2667 6.66533 14.414 6.88581 14.5145 7.12846C14.6151 7.37111 14.6668 7.63118 14.6668 7.89383C14.6668 8.15647 14.6151 8.41654 14.5145 8.65919C14.414 8.90184 14.2667 9.12232 14.081 9.30804C13.8953 9.49376 13.6748 9.64108 13.4321 9.74158C13.1895 9.84209 12.9294 9.89383 12.6668 9.89383V11.8938C12.6668 12.9925 11.4128 13.6198 10.5334 12.9605L9.16012 11.9298C8.426 11.3794 7.57127 11.012 6.66678 10.8578V12.7538C6.66686 13.1897 6.50938 13.6108 6.22338 13.9397C5.93739 14.2686 5.54215 14.4829 5.11053 14.5434C4.67891 14.6038 4.24 14.5061 3.8747 14.2684C3.50941 14.0307 3.24236 13.6689 3.12278 13.2498L2.07612 9.58583C1.69946 9.14102 1.45434 8.59997 1.36831 8.0235C1.28227 7.44703 1.35874 6.85798 1.58911 6.32258C1.81947 5.78718 2.19461 5.32665 2.67235 4.99276C3.15009 4.65886 3.71149 4.46483 4.29345 4.43249L6.30545 4.32049C7.28988 4.26581 8.24725 3.97814 9.09878 3.48116L10.6614 2.56916C11.5508 2.05116 12.6668 2.69183 12.6668 3.72116ZM3.75612 10.6125L4.40478 12.8838C4.436 12.9938 4.50594 13.0887 4.6017 13.1511C4.69745 13.2135 4.81255 13.2391 4.92574 13.2233C5.03892 13.2075 5.14255 13.1512 5.21749 13.0649C5.29243 12.9786 5.33362 12.8681 5.33345 12.7538V10.7472L4.29345 10.6892C4.11255 10.6783 3.93285 10.6526 3.75612 10.6125ZM11.3334 3.72116L9.77012 4.63383C8.82074 5.1883 7.76151 5.52826 6.66678 5.62983V9.50916C7.85812 9.67316 8.99212 10.1378 9.96012 10.8632L11.3334 11.8938V3.72116ZM5.33345 5.70983L4.36678 5.76316C3.91708 5.78799 3.49303 5.98051 3.17833 6.30271C2.86363 6.62491 2.68115 7.05338 2.66692 7.50354C2.65269 7.9537 2.80773 8.39285 3.10145 8.73428C3.39517 9.07572 3.80621 9.29464 4.25345 9.34783L4.36678 9.35783L5.33345 9.41116V5.70983ZM12.6668 7.22716V8.56049C12.8367 8.5603 13.0001 8.49524 13.1237 8.37859C13.2473 8.26195 13.3216 8.10252 13.3316 7.9329C13.3415 7.76327 13.2863 7.59624 13.1773 7.46594C13.0682 7.33564 12.9135 7.25189 12.7448 7.23183L12.6668 7.22716Z"
+                                    fill="#838383" />
+                            </svg>
+                            <p>Elanlar</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M13.9998 11.8942V5.89421H4.6665V11.8942H13.9998ZM13.9998 2.56087C14.3535 2.56087 14.6926 2.70135 14.9426 2.9514C15.1927 3.20145 15.3332 3.54058 15.3332 3.89421V11.8942C15.3332 12.2478 15.1927 12.587 14.9426 12.837C14.6926 13.0871 14.3535 13.2275 13.9998 13.2275H4.6665C4.31288 13.2275 3.97374 13.0871 3.72369 12.837C3.47365 12.587 3.33317 12.2478 3.33317 11.8942V3.89421C3.33317 3.54058 3.47365 3.20145 3.72369 2.9514C3.97374 2.70135 4.31288 2.56087 4.6665 2.56087H5.33317V1.22754H6.6665V2.56087H11.9998V1.22754H13.3332V2.56087H13.9998ZM1.99984 14.5609H11.3332V15.8942H1.99984C1.64622 15.8942 1.30708 15.7537 1.05703 15.5037C0.80698 15.2536 0.666504 14.9145 0.666504 14.5609V6.56087H1.99984V14.5609ZM12.6665 10.5609H9.99984V7.89421H12.6665V10.5609Z"
+                                    fill="#838383" />
+                            </svg>
+                            <p>Tədbirlər</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M10.0002 13.3125C10.5689 13.4775 11.1581 13.561 11.7502 13.5605C12.7025 13.5628 13.6426 13.3456 14.4975 12.9259C14.4993 12.8877 14.5002 12.8492 14.5002 12.8105C14.5002 12.2225 14.3118 11.6499 13.9624 11.1768C13.6131 10.7037 13.1214 10.3551 12.5593 10.182C11.9973 10.009 11.3946 10.0207 10.8397 10.2154C10.2847 10.4101 9.80687 10.7776 9.47618 11.2639M10.0002 13.3125V13.3105C10.0002 12.5685 9.81018 11.8705 9.47618 11.2639M10.0002 13.3125V13.3832C8.71741 14.1565 7.24734 14.5637 5.74951 14.5605C4.19551 14.5605 2.74151 14.1305 1.50018 13.3832L1.49951 13.3105C1.499 12.3669 1.81259 11.4498 2.39083 10.7041C2.96908 9.95828 3.77909 9.42617 4.69317 9.19161C5.60725 8.95706 6.57339 9.0334 7.43929 9.40861C8.30518 9.78381 9.02224 10.4365 9.47618 11.2639M8.00018 4.81055C8.00018 5.40728 7.76313 5.97958 7.34117 6.40154C6.91921 6.82349 6.34692 7.06055 5.75018 7.06055C5.15344 7.06055 4.58115 6.82349 4.15919 6.40154C3.73723 5.97958 3.50018 5.40728 3.50018 4.81055C3.50018 4.21381 3.73723 3.64151 4.15919 3.21956C4.58115 2.7976 5.15344 2.56055 5.75018 2.56055C6.34692 2.56055 6.91921 2.7976 7.34117 3.21956C7.76313 3.64151 8.00018 4.21381 8.00018 4.81055ZM13.5002 6.31055C13.5002 6.77468 13.3158 7.2198 12.9876 7.54798C12.6594 7.87617 12.2143 8.06055 11.7502 8.06055C11.2861 8.06055 10.8409 7.87617 10.5127 7.54798C10.1846 7.2198 10.0002 6.77468 10.0002 6.31055C10.0002 5.84642 10.1846 5.4013 10.5127 5.07311C10.8409 4.74492 11.2861 4.56055 11.7502 4.56055C12.2143 4.56055 12.6594 4.74492 12.9876 5.07311C13.3158 5.4013 13.5002 5.84642 13.5002 6.31055Z"
+                                    stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p>Əməkdaşlar</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M13.5 3.18555H2.5C2.26794 3.18555 2.04538 3.27773 1.88128 3.44183C1.71719 3.60592 1.625 3.82848 1.625 4.06055V13.0605C1.625 13.2926 1.71719 13.5152 1.88128 13.6793C2.04538 13.8434 2.26794 13.9355 2.5 13.9355H3.33687C3.40784 13.9355 3.47734 13.9154 3.5373 13.8774C3.59726 13.8395 3.64523 13.7853 3.67563 13.7212C3.92886 13.1864 4.32872 12.7345 4.82872 12.418C5.32871 12.1015 5.90827 11.9335 6.5 11.9335C7.09173 11.9335 7.67129 12.1015 8.17128 12.418C8.67128 12.7345 9.07114 13.1864 9.32438 13.7212C9.35477 13.7853 9.40274 13.8395 9.4627 13.8774C9.52266 13.9154 9.59216 13.9355 9.66313 13.9355H13.5C13.7321 13.9355 13.9546 13.8434 14.1187 13.6793C14.2828 13.5152 14.375 13.2926 14.375 13.0605V4.06055C14.375 3.82848 14.2828 3.60592 14.1187 3.44183C13.9546 3.27773 13.7321 3.18555 13.5 3.18555ZM4.875 9.56055C4.875 9.23915 4.9703 8.92498 5.14886 8.65775C5.32742 8.39052 5.58121 8.18224 5.87814 8.05924C6.17507 7.93625 6.5018 7.90407 6.81702 7.96677C7.13224 8.02947 7.42179 8.18424 7.64905 8.4115C7.87631 8.63876 8.03107 8.92831 8.09378 9.24353C8.15648 9.55874 8.1243 9.88548 8.0013 10.1824C7.87831 10.4793 7.67003 10.7331 7.4028 10.9117C7.13557 11.0902 6.82139 11.1855 6.5 11.1855C6.06902 11.1855 5.6557 11.0143 5.35095 10.7096C5.04621 10.4048 4.875 9.99152 4.875 9.56055ZM13.625 13.0605C13.625 13.0937 13.6118 13.1255 13.5884 13.1489C13.5649 13.1724 13.5332 13.1855 13.5 13.1855H9.89188C9.45461 12.4007 8.75955 11.7911 7.92438 11.4599C8.3233 11.1609 8.61803 10.744 8.7668 10.2682C8.91556 9.79234 8.91082 9.28176 8.75325 8.80878C8.59567 8.3358 8.29326 7.9244 7.88885 7.63287C7.48443 7.34133 6.99854 7.18445 6.5 7.18445C6.00146 7.18445 5.51557 7.34133 5.11115 7.63287C4.70674 7.9244 4.40433 8.3358 4.24675 8.80878C4.08918 9.28176 4.08444 9.79234 4.23321 10.2682C4.38197 10.744 4.6767 11.1609 5.07562 11.4599C4.24045 11.7911 3.54539 12.4007 3.10812 13.1855H2.5C2.46685 13.1855 2.43505 13.1724 2.41161 13.1489C2.38817 13.1255 2.375 13.0937 2.375 13.0605V4.06055C2.375 4.02739 2.38817 3.9956 2.41161 3.97216C2.43505 3.94872 2.46685 3.93555 2.5 3.93555H13.5C13.5332 3.93555 13.5649 3.94872 13.5884 3.97216C13.6118 3.9956 13.625 4.02739 13.625 4.06055V13.0605ZM12.375 5.56055V11.5605C12.375 11.66 12.3355 11.7554 12.2652 11.8257C12.1948 11.896 12.0995 11.9355 12 11.9355H11C10.9005 11.9355 10.8052 11.896 10.7348 11.8257C10.6645 11.7554 10.625 11.66 10.625 11.5605C10.625 11.4611 10.6645 11.3657 10.7348 11.2954C10.8052 11.2251 10.9005 11.1855 11 11.1855H11.625V5.93555H4.375V6.56055C4.375 6.66 4.33549 6.75539 4.26516 6.82571C4.19484 6.89604 4.09946 6.93555 4 6.93555C3.90054 6.93555 3.80516 6.89604 3.73483 6.82571C3.66451 6.75539 3.625 6.66 3.625 6.56055V5.56055C3.625 5.46109 3.66451 5.36571 3.73483 5.29538C3.80516 5.22506 3.90054 5.18555 4 5.18555H12C12.0995 5.18555 12.1948 5.22506 12.2652 5.29538C12.3355 5.36571 12.375 5.46109 12.375 5.56055Z"
+                                    fill="#838383" />
+                            </svg>
+                            <p>Müəllimlər</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                <path
+                                    d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"
+                                    fill="#838383" />
+                                <path
+                                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"
+                                    fill="#838383" />
+                            </svg>
+                            <p>Vakansiyalar</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <path
+                                    d="M7.99967 7.22689C9.47243 7.22689 10.6663 6.03298 10.6663 4.56022C10.6663 3.08746 9.47243 1.89355 7.99967 1.89355C6.52692 1.89355 5.33301 3.08746 5.33301 4.56022C5.33301 6.03298 6.52692 7.22689 7.99967 7.22689Z"
+                                    stroke="#838383" stroke-width="1.5" />
+                                <path
+                                    d="M13.3332 12.2266C13.3332 13.8832 13.3332 15.2266 7.99984 15.2266C2.6665 15.2266 2.6665 13.8832 2.6665 12.2266C2.6665 10.5699 5.0545 9.22656 7.99984 9.22656C10.9452 9.22656 13.3332 10.5699 13.3332 12.2266Z"
+                                    stroke="#838383" stroke-width="1.5" />
+                            </svg>
+                            <p>Profilim</p>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                                fill="none">
+                                <g clip-path="url(#clip0_2127_1137)">
+                                    <path
+                                        d="M3.42843 8.56015V5.55444C3.43736 4.96362 3.56278 4.38036 3.7975 3.8381C4.03223 3.29583 4.37165 2.80521 4.79632 2.39435C5.22098 1.98348 5.72254 1.66045 6.27227 1.44377C6.82199 1.22708 7.40907 1.12099 7.99986 1.13158C8.59065 1.12099 9.17773 1.22708 9.72745 1.44377C10.2772 1.66045 10.7787 1.98348 11.2034 2.39435C11.6281 2.80521 11.9675 3.29583 12.2022 3.8381C12.4369 4.38036 12.5624 4.96362 12.5713 5.55444V8.56015M10.2856 14.5602C10.8918 14.5602 11.4732 14.3193 11.9018 13.8907C12.3305 13.462 12.5713 12.8806 12.5713 12.2744V9.70301M10.2856 14.5602C10.2856 14.939 10.1351 15.3024 9.86716 15.5703C9.59925 15.8382 9.23588 15.9887 8.857 15.9887H7.14272C6.76384 15.9887 6.40047 15.8382 6.13257 15.5703C5.86466 15.3024 5.71415 14.939 5.71415 14.5602C5.71415 14.1813 5.86466 13.8179 6.13257 13.55C6.40047 13.2821 6.76384 13.1316 7.14272 13.1316H8.857C9.23588 13.1316 9.59925 13.2821 9.86716 13.55C10.1351 13.8179 10.2856 14.1813 10.2856 14.5602ZM1.71415 6.84587H2.857C3.00856 6.84587 3.1539 6.90607 3.26106 7.01323C3.36823 7.1204 3.42843 7.26574 3.42843 7.4173V10.8459C3.42843 10.9974 3.36823 11.1428 3.26106 11.2499C3.1539 11.3571 3.00856 11.4173 2.857 11.4173H1.71415C1.41104 11.4173 1.12035 11.2969 0.906024 11.0826C0.691697 10.8682 0.571289 10.5775 0.571289 10.2744V7.98872C0.571289 7.68562 0.691697 7.39493 0.906024 7.1806C1.12035 6.96627 1.41104 6.84587 1.71415 6.84587ZM14.2856 11.4173H13.1427C12.9912 11.4173 12.8458 11.3571 12.7387 11.2499C12.6315 11.1428 12.5713 10.9974 12.5713 10.8459V7.4173C12.5713 7.26574 12.6315 7.1204 12.7387 7.01323C12.8458 6.90607 12.9912 6.84587 13.1427 6.84587H14.2856C14.5887 6.84587 14.8794 6.96627 15.0937 7.1806C15.308 7.39493 15.4284 7.68562 15.4284 7.98872V10.2744C15.4284 10.5775 15.308 10.8682 15.0937 11.0826C14.8794 11.2969 14.5887 11.4173 14.2856 11.4173Z"
+                                        stroke="#838383" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2127_1137">
+                                        <rect width="16" height="16" fill="white" transform="translate(0 0.560547)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>Dəstək</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="sign-out-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path
+                        d="M3.74384 13.8942C3.43673 13.8942 3.1805 13.7915 2.97517 13.5862C2.76984 13.3809 2.66695 13.1244 2.6665 12.8169V4.30487C2.6665 3.99776 2.76939 3.74154 2.97517 3.53621C3.18095 3.33087 3.43717 3.22798 3.74384 3.22754H8.0125V3.89421H3.74384C3.64117 3.89421 3.54695 3.93687 3.46117 4.02221C3.37539 4.10754 3.33273 4.20176 3.33317 4.30487V12.8175C3.33317 12.9198 3.37584 13.0138 3.46117 13.0995C3.5465 13.1853 3.6405 13.228 3.74317 13.2275H8.0125V13.8942H3.74384ZM10.9745 10.9202L10.5065 10.4402L12.0525 8.89421H6.12784V8.22754H12.0525L10.5058 6.68087L10.9738 6.20221L13.3332 8.56087L10.9745 10.9202Z"
+                        fill="#838383" />
+                </svg>
+                <p>Çıxış edin</p>
+            </button>
+        </div>
+    </div>
+
+    <main class="main">
+        <header class="main-header">
+            <div class="container">
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 14" fill="none">
+                        <path d="M1 1.00098H19M1 7.00098H19M1 13.001H19" stroke="black" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="lang-dropdown">
+                    <div class="dropdown">
+                        <button class="btn bg-transparent dropdown-toggle poppins-regular" type="button"
+                            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="flag-icon">
+                                <img src="./assets/icons/az.svg" alt="AZ">
+                            </div> AZ
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"
+                            id="dropdownMenu">
+                            <li>
+                                <a class="dropdown-item poppins-regular" href="#" data-lang="en">
+                                    <div class="flag-icon">
+                                        <img src="./assets/icons/en.svg" alt="EN">
+                                    </div>
+                                    EN
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item poppins-regular" href="#" data-lang="ru">
+                                    <div class="flag-icon">
+                                        <img src="./assets/icons/ru.svg" alt="RU">
+                                    </div>
+                                    RU
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="notification-block" id="notification-block">
+                    <img src="./assets/icons/notification.svg" alt="">
+                </div>
+                <div class="profile-picture" id="profile-picture">
+                    <img src="./assets/img/profile-picture.png" alt="">
+                </div>
+                <div class="profile-picture-dropdown" id="profile-picture-dropdown">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Məmmədova Aysel</h4>
+                            <p class="card-desc-1">Azərbaycan bölməsi</p>
+                            <p class="card-desc-2">11 sinif</p>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="card-footer-menu">
+                                <li class="card-footer-menu-item">
+                                    <a href="#" class="card-footer-menu-link">
+                                        <img src="./assets/icons/setting.svg" alt="">
+                                        Tənzimləmələr
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="inner-navigation">
+                <div class="page-title">
+                    <a href="#">
+                        <img src="./assets/icons/arrow-left.svg" alt="">
+                        <h2>Nəticələrim</h2>
+                    </a>
+                </div>
+                <div class="page-controls">
+                    <select name="page-controls" id="page-controls">
+                        <option value="Bu gün">Bu gün</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Bayramda">Bayramda</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row tests-row results-row">
+                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                    <div class="card">
+                        <div class="card-level">
+                            <div class="card-level-inner">
+                                <p class="card-level-text">25 sual</p>
+                            </div>
+                        </div>
+                        <img src="./assets/img/my-result.svg" alt="" class="card-icon">
+                        <h3 class="card-title">Riyaziyyat İmtahan nəticəsi</h3>
+                        <p class="card-details"><img src="./assets/icons/clock-3.svg" alt="">İmtahanda keçirilen vaxt:  <span class="test-minute">45</span> deq</p>
+                        <p class="card-details"><img src="./assets/icons/question.svg" alt="">Cavablandırılan suallar:  <span class="test-minute">21</span></p>
+                        <p class="card-details"><img src="./assets/icons/danger-2.svg" alt="">Cavablandırılmayan suallar:  <span class="test-minute">4</span></p>
+                        <a href="./exam.html" class="btn card-btn">Nəticələrimə bax <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                    <div class="card">
+                        <div class="card-level">
+                            <div class="card-level-inner">
+                                <p class="card-level-text">25 sual</p>
+                            </div>
+                        </div>
+                        <img src="./assets/img/my-result.svg" alt="" class="card-icon">
+                        <h3 class="card-title">Riyaziyyat İmtahan nəticəsi</h3>
+                        <p class="card-details"><img src="./assets/icons/clock-3.svg" alt="">İmtahanda keçirilen vaxt:  <span class="test-minute">45</span> deq</p>
+                        <p class="card-details"><img src="./assets/icons/question.svg" alt="">Cavablandırılan suallar:  <span class="test-minute">21</span></p>
+                        <p class="card-details"><img src="./assets/icons/danger-2.svg" alt="">Cavablandırılmayan suallar:  <span class="test-minute">4</span></p>
+                        <a href="./exam.html" class="btn card-btn">Nəticələrimə bax <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                    <div class="card">
+                        <div class="card-level">
+                            <div class="card-level-inner">
+                                <p class="card-level-text">25 sual</p>
+                            </div>
+                        </div>
+                        <img src="./assets/img/my-result.svg" alt="" class="card-icon">
+                        <h3 class="card-title">Riyaziyyat İmtahan nəticəsi</h3>
+                        <p class="card-details"><img src="./assets/icons/clock-3.svg" alt="">İmtahanda keçirilen vaxt:  <span class="test-minute">45</span> deq</p>
+                        <p class="card-details"><img src="./assets/icons/question.svg" alt="">Cavablandırılan suallar:  <span class="test-minute">21</span></p>
+                        <p class="card-details"><img src="./assets/icons/danger-2.svg" alt="">Cavablandırılmayan suallar:  <span class="test-minute">4</span></p>
+                        <a href="./exam.html" class="btn card-btn">Nəticələrimə bax <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                    <div class="card">
+                        <div class="card-level">
+                            <div class="card-level-inner">
+                                <p class="card-level-text">25 sual</p>
+                            </div>
+                        </div>
+                        <img src="./assets/img/my-result.svg" alt="" class="card-icon">
+                        <h3 class="card-title">Riyaziyyat İmtahan nəticəsi</h3>
+                        <p class="card-details"><img src="./assets/icons/clock-3.svg" alt="">İmtahanda keçirilen vaxt:  <span class="test-minute">45</span> deq</p>
+                        <p class="card-details"><img src="./assets/icons/question.svg" alt="">Cavablandırılan suallar:  <span class="test-minute">21</span></p>
+                        <p class="card-details"><img src="./assets/icons/danger-2.svg" alt="">Cavablandırılmayan suallar:  <span class="test-minute">4</span></p>
+                        <a href="./exam.html" class="btn card-btn">Nəticələrimə bax <img src="./assets/icons/arrow-right-white.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification-panel" id="notification-panel">
+            <div class="notification-panel-content" id="notification-panel-content">
+                <div class="notification-panel-header">
+                    <h3 class="notification-panel-title">Bildirişlər</h3>
+                    <div class="notification-panel-close" id="notification-close">
+                        <img src="./assets/icons/close.svg" alt="">
+                    </div>
+                </div>
+                <div class="notification-panel-body">
+                    <a href="#" class="notification">
+                        <div class="notification-left">
+                            <div class="notification-left-img">
+                                <img src="./assets/img/notification-img.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notification-right">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">İmtahan nəticəsi</h4>
+                                <div class="notification-time notification-time-mb">
+                                    <img src="./assets/icons/time-gray.svg" alt=""> 
+                                    2 saat əvvəl
+                                </div>
+                                <p class="notification-header-desc">Fənn: <span>İngilis dili</span></p>
+                                <p class="notification-header-desc">Mövzu: <span>Present perfect</span></p>
+                            </div>
+                            <div class="notification-status-bar">
+                                <div class="notification-time notification-time-lg">
+                                    <img src="./assets/icons/time-gray.svg" alt=""> 
+                                    2 saat əvvəl
+                                </div>
+
+                                <div class="notification-status"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
