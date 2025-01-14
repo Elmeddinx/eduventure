@@ -1,8 +1,59 @@
-.children-profiles {
+.children-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:active,
+    &:focus,
+    &:focus-visible {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+    .dropdown-menu {
+        min-width: 76px;
+        
+    transform: translate3d(0px, 58.2px, 0px) !important;
+    }
+
+    .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        outline: none;
+        padding: 0;
+        &:active,
+        &:focus,
+        &:focus-visible {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+        &::after {
+            content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDI0IDEzIiBmaWxsPSJub25lIj4KICA8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMjIwNV84MzcwKSI+CiAgICA8cGF0aCBkPSJNMTcuNDE5OCAyLjk1MTk5TDE4LjQ3OTggNC4wMTI5OUwxMi43MDI4IDkuNzkxOTlDMTIuNjEwMiA5Ljg4NTE0IDEyLjUwMDEgOS45NTkwNyAxMi4zNzg5IDEwLjAwOTVDMTIuMjU3NiAxMC4wNiAxMi4xMjc2IDEwLjA4NTkgMTEuOTk2MyAxMC4wODU5QzExLjg2NDkgMTAuMDg1OSAxMS43MzQ5IDEwLjA2IDExLjYxMzcgMTAuMDA5NUMxMS40OTI0IDkuOTU5MDcgMTEuMzgyMyA5Ljg4NTE0IDExLjI4OTggOS43OTE5OUw1LjUwOTc3IDQuMDEyOTlMNi41Njk3NyAyLjk1Mjk5TDExLjk5NDggOC4zNzY5OUwxNy40MTk4IDIuOTUxOTlaIiBmaWxsPSJibGFjayIvPgogIDwvZz4KICA8ZGVmcz4KICAgIDxjbGlwUGF0aCBpZD0iY2xpcDBfMjIwNV84MzcwIj4KICAgICAgPHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjI0IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQgMC41KSByb3RhdGUoOTApIi8+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KPC9zdmc+");
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 0;
+            border-top: 0;
+        }
+    }
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        &:active {
+            background-color: #fff;
+        }
+    }
+
     margin-right: auto;
     position: relative;
-    @include mq(tablet-portrait-up) {
+    @include mq(tablet-landscape-up) {
         display: none;
+    }
+    button {
+        &:focus,
+        &:focus-visible {
+            outline: none;
+            border: none;
+        }
     }
     &-inner {
         display: flex;

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const languageDropdown = document.getElementById("languageDropdown");
-  const dropdownMenu = document.getElementById("dropdownMenu");
+  const dropdownMenu = document.getElementById("langDropdownMenu");
 
   const languages = {
     az: { name: "AZ", flag: "./assets/icons/az.svg" },
@@ -37,6 +37,60 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const childrenDropdown = document.getElementById("childrenDropdown");
+  const childrenDropdownMenu = document.getElementById("childrenDropdownMenu");
+
+  if (childrenDropdownMenu) {
+    childrenDropdownMenu.addEventListener("click", function (e) {
+      const clickedElement = e.target.closest(".dropdown-item");
+
+      if (clickedElement) {
+        e.preventDefault();
+
+        // Seçilen öğenin parent 'li' öğesini bul
+        const selectedItem = clickedElement.closest("li");
+        if (!selectedItem) return; // Eğer 'li' bulunamazsa işlemi sonlandır
+
+        const selectedName = selectedItem.querySelector(".children-dropdown-dropdown-name").textContent;
+        const selectedAvatar = selectedItem.querySelector(".children-dropdown-dropdown-avatar-inner").textContent;
+
+        // Mevcut dropdown başlığı bilgilerini al
+        const currentName = childrenDropdown.querySelector(".children-dropdown-name").textContent;
+        const currentAvatar = childrenDropdown.querySelector(".children-dropdown-avatar-inner").textContent;
+
+        // Mevcut başlık öğesini menüye geri ekle
+        const existingItem = document.createElement("li");
+        existingItem.innerHTML = `
+          <a class="dropdown-item poppins-regular" href="#">
+            <div class="children-dropdown-dropdown-avatar">
+              <div class="children-dropdown-dropdown-avatar-inner">${currentAvatar}</div>
+            </div>
+            <div class="children-dropdown-dropdown-name">${currentName}</div>
+          </a>
+        `;
+
+        // İlk olarak seçilen öğeyi menüden kaldır
+        selectedItem.remove();
+
+        // Sonra mevcut öğeyi menüye ekle
+        childrenDropdownMenu.appendChild(existingItem);
+
+        // Seçilen öğeyi başlığa yerleştir
+        childrenDropdown.innerHTML = `
+          <div class="children-dropdown-inner">
+            <div class="children-dropdown-avatar">
+              <div class="children-dropdown-avatar-inner">${selectedAvatar}</div>
+            </div>
+            <div class="children-dropdown-name">${selectedName}</div>
+            </svg>
+          </div>
+        `;
+      }
+    });
+  }
+});
+
 
 var swiper = new Swiper(".landing-swiper", {
   slidesPerView: 1.2,
@@ -254,8 +308,8 @@ if (profilePicture) {
     }
   });
 }
-const childrenProfiles = document.getElementById("children-profiles");
-const childrenProfilesDropdown = document.getElementById("children-profiles-dropdown");
+const childrenProfiles = document.getElementById("children-dropdown");
+const childrenProfilesDropdown = document.getElementById("children-dropdown-dropdown");
 if (childrenProfiles) {
   childrenProfiles.addEventListener("click", function () {
     childrenProfilesDropdown.classList.toggle("active");

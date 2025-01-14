@@ -8,18 +8,22 @@
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    display: flex;
     justify-content: flex-end;
     opacity: 0;
     z-index: -1;
+    display: flex;
+    @include mq(tablet-portrait-down) {
+        display: none;
+    }
     &.active {
         @include mq(tablet-portrait-up) {
             transform: translateX(0);
             transition: transform 0.3s;
         }
-        transition: opacity 0.3s;
+        transition: all 0.3s;
         opacity: 1;
         z-index: 9999;
+        display: flex;
         .notification-panel-content {
             transform: translateX(0);
             transition: transform 0.45s;
