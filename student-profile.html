@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Eduventure</title>
 </head>
 
@@ -302,8 +302,161 @@
                     <div class="profile-section-title">
                         <h3>Vent sayı</h3>
                     </div>
+                    <div class="row">
+                        <div class="col-12 vent-col">
+                            <div class="card text-center">
+                                <div class="card-header border-0 bg-transparent p-0">
+                                    <span class="rounded-pill px-3 py-1 text-white">
+                                        Ən yüksək vent xalı
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">1245</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 vent-col vent-col-center">
+                            <div class="card text-center">
+                                <div class="card-header border-0 bg-transparent p-0">
+                                    <span class="rounded-pill px-3 py-1 text-white">
+                                        Ümumi vent xalı
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">1245</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 vent-col">
+                            <div class="card text-center">
+                                <div class="card-header border-0 bg-transparent p-0">
+                                    <span class="rounded-pill px-3 py-1 text-white">
+                                        Son müsabiqə vent xalı
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">1245</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="test-titles">
+                <div class="test-titles-inner">
+                    <div class="profile-section-title">
+                        <h3>Test/Sınaq</h3>
+                    </div>
+                    <div class="swiper test-titles-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Ümumi sınaqlar
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Günlük Testlər
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Quizlər
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Müsabiqələr
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Olimpiadalar
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Viktorinalar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="success-rate">
+                <div class="success-rate-inner">
+                    <div class="success-rate-header">
+                        <p class="success-rate-title">Uğur dərəcəsi</p>
+                        <div class="success-rate-dropdown dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="successRateDropdownMenuButton">
+                                Today
+                            </button>
+
+                            <ul class="success-rate-dropdown-menu dropdown-menu"
+                                aria-labelledby="successRateDropdownMenuButton">
+                                <li><a class="success-rate-dropdown-item dropdown-item" href="#" data-value="Bu gün">Bu
+                                        gün</a></li>
+                                <li><a class="success-rate-dropdown-item dropdown-item" href="#"
+                                        data-value="Bu həftə">Bu həftə</a></li>
+                                <li><a class="success-rate-dropdown-item dropdown-item" href="#" data-value="Bu ay">Bu
+                                        ay</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs success-rate-tabs" id="successRateTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one"
+                                type="button" role="tab" aria-controls="one" aria-selected="true">
+                                1
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two"
+                                type="button" role="tab" aria-controls="two" aria-selected="false">
+                                2
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3 success-rate-content" id="successRateTabContent">
+                        <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                            <div class="row mt-4 justify-content-between chart-row">
+                                <div class="col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                    <a href="#">
+                                        <h6 class="chart-title">Ümumi sınaqlar</h6>
+                                        <canvas id="chartUmumi"></canvas>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                    <a href="#">
+                                        <h6 class="chart-title">Günlük Testlər</h6>
+                                        <canvas id="chartGunluk"></canvas>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                    <a href="#">
+                                        <h6 class="chart-title">Quizlər</h6>
+                                        <canvas id="chartQuiz"></canvas>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row chart-legend-row">
+                                <div class="chart-legend">
+                                    <span class="green">Doğru cavablar</span>
+                                    <span class="red">Yanlış cavablar</span>
+                                    <span class="grey">Cavablandırılmayan</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                            <p>Bu Profil üçün olan məzmundur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
         <div class="notification-panel" id="notification-panel">
@@ -357,6 +510,7 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

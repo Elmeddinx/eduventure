@@ -1,0 +1,25 @@
+.test-titles {
+    margin-top: 40px;
+    margin-bottom: 150px;
+    &-swiper {
+        .swiper-slide {
+            width: auto;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                border-radius: 8px;
+                background: #d9eeee;
+                color: #07898a;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding: 15px 42px;
+                text-decoration: none;
+            }
+        }
+    }
+}

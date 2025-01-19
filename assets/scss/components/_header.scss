@@ -5,8 +5,16 @@
         cursor: pointer;
         width: fit-content;
         margin-right: auto;
+        display: flex;
+        align-items: center;
         @include mq(tablet-landscape-down) {
             display: none;
+        }
+        @include mq(tablet-landscape-up) {
+            margin-right: 20px;
+        }
+        @include mq(tablet-portrait-up) {
+            margin-right: auto;
         }
     }
     .container {

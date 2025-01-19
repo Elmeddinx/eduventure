@@ -14,7 +14,8 @@
         align-items: flex-end;
 
         @include mq(tablet-portrait-up) {
-            height: 330px;
+            align-items: center;
+            height: 390px;
         }
     }
     &-cover {
@@ -186,3 +187,5 @@
 }
 
 @import "./vent-count";
+@import "./test-titles";
+@import "./success-rate";

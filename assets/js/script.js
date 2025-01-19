@@ -360,3 +360,86 @@ if (fileInput) {
     }
   });
 }
+var swiper = new Swiper(".test-titles-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  freeMode: true,
+  loop: false,
+  pagination: false,
+  breakpoints: {
+    1845: {
+      slidesPerView: 6,
+    },
+  },
+});
+
+document.querySelectorAll(".success-rate-dropdown-item").forEach(function(item) {
+  item.addEventListener("click", function(e) {
+    e.preventDefault();
+    const newValue = this.getAttribute("data-value");
+    const dropdownButton = document.getElementById("successRateDropdownMenuButton");
+    dropdownButton.textContent = newValue;
+  });
+});
+
+
+ // Chart data
+ const chartData = {
+  labels: ["Doğru cavablar", "Yanlış cavablar", "Cavablandırılmayan"],
+  datasets: [{
+    data: [40.85, 25, 30], // Faiz dəyərləri
+    backgroundColor: ["#00BB4A", "#FF0B23", "#DDD"],
+    hoverOffset: 4
+  }]
+};
+
+// Chart options
+const chartOptions = {
+  plugins: {
+    legend: {
+      display: false // Daxili legend gizlədilir
+    },
+    // Tooltip konfiqurasiyası
+    tooltip: {
+      callbacks: {
+        label: function(context) {
+          const label = context.label || "";
+          return label; // Tooltipdə yalnız başlıq göstərilir
+        }
+      }
+    },
+    // Datalabels plugin: Pie içində faizləri göstərmək üçün
+    datalabels: {
+      color: '#fff', // Faiz rəngi
+      font: {
+        weight: 'bold',
+        size: 14
+      },
+      formatter: (value) => `${value}%` // Faiz dəyəri göstərilir
+    }
+  },
+  responsive: true,
+  maintainAspectRatio: true // Aspect ratio-nu qoruyuruq
+};
+
+// Chart-ların yaradılması
+new Chart(document.getElementById("chartUmumi"), {
+  type: "pie",
+  data: chartData,
+  options: chartOptions,
+  plugins: [ChartDataLabels]
+});
+
+new Chart(document.getElementById("chartGunluk"), {
+  type: "pie",
+  data: chartData,
+  options: chartOptions,
+  plugins: [ChartDataLabels]
+});
+
+new Chart(document.getElementById("chartQuiz"), {
+  type: "pie",
+  data: chartData,
+  options: chartOptions,
+  plugins: [ChartDataLabels]
+});

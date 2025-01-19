@@ -13,8 +13,5 @@
         @include mq(tablet-landscape-down) {
             max-width: calc(100% - 75px);
         }
-        @include mq(desktop-down) {
-            max-width: calc(100% - 130px);
-        }
     }
 }
