@@ -1412,7 +1412,13 @@ footer .footer-bottom .footer-social-item {
 .notification-panel-body {
   width: 100%;
   margin-top: 40px;
-  padding: 0 20px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.notification-panel-body-inner {
+  height: 600px;
+  overflow-y: scroll;
+  padding-right: 20px;
 }
 .notification-panel-body .notification {
   width: 100%;
@@ -1422,6 +1428,9 @@ footer .footer-bottom .footer-social-item {
   border-bottom: 1px solid #666;
   padding-bottom: 20px;
   text-decoration: none;
+}
+.notification-panel-body .notification:not(.notification-panel-body .notification:nth-child(1)) {
+  padding: 20px 0;
 }
 .notification-panel-body .notification-left-img {
   width: 58px;
@@ -4711,6 +4720,9 @@ footer .footer-bottom .footer-social-item {
 
 .profile-section-title {
   margin-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .profile-section-title h3 {
   color: #07898a;
@@ -5160,4 +5172,140 @@ footer .footer-bottom .footer-social-item {
 .price-cards-row .price-card-btn:hover {
   background-color: #07898a;
   color: #fff;
+}
+
+.success-metrics-overview {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.success-metrics-overview-row {
+  row-gap: 35px;
+  margin-bottom: 30px;
+}
+.success-metrics-overview-row .success-metrics-count-inner {
+  border-radius: 12px;
+  background: #f5f5f5;
+  padding: 23px 43px;
+  height: 242px;
+}
+@media only screen and (max-width: 1200px) {
+  .success-metrics-overview-row .success-metrics-count-inner {
+    padding: 15px 18px;
+  }
+}
+.success-metrics-overview-row .success-metrics-count-content {
+  width: 100%;
+  height: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.success-metrics-overview-row .success-metrics-count-text {
+  color: #00bb4a;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 3.2px;
+}
+
+.subjects-statistics-inner {
+  border-radius: 12px;
+  background: #f5f5f5;
+  padding: 23px 43px;
+}
+.subjects-statistics-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subjects-statistics-content .chart-row {
+  width: 100%;
+  max-width: 900px;
+  row-gap: 24px;
+}
+.subjects-statistics-content .chart-col {
+  width: 209px;
+  height: 248px;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .subjects-statistics-content .chart-col {
+    width: 100%;
+  }
+}
+.subjects-statistics-content .chart-col a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .subjects-statistics-content .chart-col canvas {
+    width: 209px !important;
+    height: 209px !important;
+  }
+}
+.subjects-statistics-content .chart-col .chart-title {
+  color: #07898a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.9px;
+}
+@media only screen and (max-width: 768px) {
+  .subjects-statistics-content .chart-legend-row {
+    width: 100%;
+  }
+}
+.subjects-statistics-content .chart-legend-row .chart-legends {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .subjects-statistics-content .chart-legend-row .chart-legends {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.subjects-statistics-content .chart-legend-row .chart-legend {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+.subjects-statistics-content .chart-legend-row .chart-legend::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 11px;
+}
+.subjects-statistics-content .chart-legend-row .chart-legend.green::before {
+  background-color: #00bb4a;
+}
+.subjects-statistics-content .chart-legend-row .chart-legend.red::before {
+  background-color: #ff0019;
+}
+.subjects-statistics-content .chart-legend-row .chart-legend.grey::before {
+  background-color: #c1c1c1;
 }/*# sourceMappingURL=style.css.map */

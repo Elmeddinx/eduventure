@@ -81,7 +81,13 @@
     &-body {
         width: 100%;
         margin-top: 40px;
-        padding: 0 20px;
+        padding-left: 20px;
+        overflow: hidden;
+        &-inner {
+            height: 600px;
+            overflow-y: scroll;
+            padding-right: 20px;
+        }
         .notification {
             width: 100%;
             display: flex;
@@ -89,6 +95,9 @@
             border-bottom: 1px solid #666;
             padding-bottom: 20px;
             text-decoration: none;
+            &:not(&:nth-child(1)) {
+                padding: 20px 0;
+            }
             &-left {
                 &-img {
                     width: 58px;

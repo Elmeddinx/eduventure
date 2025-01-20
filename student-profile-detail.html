@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Eduventure</title>
 </head>
 
@@ -178,6 +178,32 @@
                             stroke-linejoin="round" />
                     </svg>
                 </div>
+                <div class="children-dropdown">
+                    <button class="btn bg-transparent dropdown-toggle poppins-regular" type="button"
+                        id="childrenDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="children-dropdown-inner">
+                            <div class="children-dropdown-avatar">
+                                <div class="children-dropdown-avatar-inner">
+                                    ÇƏ
+                                </div>
+                            </div>
+                            <div class="children-dropdown-name">Çinarə Əlizadə</div>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="childrenDropdown"
+                        id="childrenDropdownMenu">
+                        <li>
+                            <a class="dropdown-item poppins-regular" href="#" data-lang="en">
+                                <div class="children-dropdown-dropdown-avatar">
+                                    <div class="children-dropdown-dropdown-avatar-inner">
+                                        EƏ
+                                    </div>
+                                </div>
+                                <div class="children-dropdown-dropdown-name">Elnurə Əlizadə</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="lang-dropdown">
                     <div class="dropdown">
                         <button class="btn bg-transparent dropdown-toggle poppins-regular" type="button"
@@ -187,7 +213,7 @@
                             </div> AZ
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown"
-                            id="dropdownMenu">
+                            id="langDropdownMenu">
                             <li>
                                 <a class="dropdown-item poppins-regular" href="#" data-lang="en">
                                     <div class="flag-icon">
@@ -235,198 +261,257 @@
             </div>
         </header>
         <div class="container">
-            <div class="settings  student-settings">
-                <div class="row justify-content-between">
-                    <div class="col-md-4  settings-nav">
-                        <div class="inner-navigation">
-                            <div class="page-title">
-                                <a href="#">
-                                    <img src="./assets/icons/arrow-left.svg" alt="">
-                                    <h2>Tənzimlənmələr</h2>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="nav nav-pills" id="settings-tab" role="tablist">
-                            <li class="nav-item">
-                                <button class="nav-link active" id="personal-info-tab" data-bs-toggle="pill"
-                                    data-bs-target="#personal-info-content" type="button" role="tab"
-                                    aria-controls="personal-info-content" aria-selected="true">
-                                    Şəxsi məlumatlar
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" id="change-password-tab" data-bs-toggle="pill"
-                                    data-bs-target="#change-password-content" type="button" role="tab"
-                                    aria-controls="change-password-content" aria-selected="false">
-                                    Şifrəni dəyiş
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link" id="more-details-tab" data-bs-toggle="pill"
-                                    data-bs-target="#more-details-content" type="button" role="tab"
-                                    aria-controls="more-details-content" aria-selected="false">
-                                    Əlavə məlumatlar
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-7 settings-tab-content">
-                        <div class="tab-content" id="settings-tab-content">
-                            <div class="tab-pane fade show active" id="personal-info-content" role="tabpanel"
-                                aria-labelledby="personal-info-tab">
-                                <h4 class="tab-content-title">Şəxsi Məlumatlar</h4>
-                                <form class="tab-content-form">
-                                    <div class="mb-3">
-                                        <div class="profile-picture-container">
-                                            <div class="profile-picture-wrapper">
-                                                <label for="settings-file-input">
-                                                    <img id="settings-profile-picture"
-                                                        src="./assets/img/employee-01.png" alt="Profile Picture"
-                                                        class="profile-picture">
-
-                                                    <div class="edit-icon">
-                                                        <img src="./assets/icons/pencil.svg" alt="">
-                                                    </div>
-                                                </label>
-                                                <input type="file" id="settings-file-input" accept="image/*" hidden>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="id" class="form-label">ID</label>
-                                            <input autocomplete="false" type="text" class="form-control" id="id"
-                                                placeholder="Text">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="surname" class="form-label">Soyad</label>
-                                            <input autocomplete="false" type="text" class="form-control" id="surname"
-                                                placeholder="Text">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="name" class="form-label">Ad</label>
-                                            <input autocomplete="false" type="text" class="form-control" id="name"
-                                                placeholder="Text">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="surname" class="form-label">Tədris xarici dil</label>
-                                            <select name="" class="form-select">
-                                                <option value="">asdgsdh</option>
-                                                <option value="">csddsc</option>
-                                                <option value="">jhmjhjhm</option>
-                                                <option value="">yytrry</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="mobile" class="form-label">Mobil nömrə</label>
-                                            <input autocomplete="false" type="tel" class="form-control" id="mobile"
-                                                placeholder="+994">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="tab-pane fade" id="change-password-content" role="tabpanel"
-                                aria-labelledby="change-password-tab">
-                                <h4 class="tab-content-title">Şifrəni Dəyiş</h4>
-                                <form class="tab-content-form">
-                                    <div class="form-group">
-                                        <label for="current-password" class="form-label">Cari Şifrə</label>
-                                        <div class=" password-group">
-                                            <input autocomplete="false" type="password" class="form-control"
-                                                id="current-password" placeholder="Köhnə şifrəni qeyd et">
-                                            <div class="password-to-text">
-                                                <img src="./assets/icons/eye-off.svg" alt="" class="passwordEye">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="new-password" class="form-label">Yeni Şifrə</label>
-                                        <div class=" password-group">
-                                            <input autocomplete="false" type="password" class="form-control"
-                                                id="new-password" placeholder="Yeni şifrəni təyin et">
-                                            <div class="password-to-text">
-                                                <img src="./assets/icons/eye-off.svg" alt="" class="passwordEye">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="confirm-password" class="form-label">Yeni Şifrəni Təkrar
-                                            Yazın</label>
-                                        <input autocomplete="false" type="password" class="form-control"
-                                            id="confirm-password" placeholder="Yeni şifrəni təkrarla">
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="tab-pane fade" id="more-details-content" role="tabpanel"
-                                aria-labelledby="more-details-tab">
-                                <h4 class="tab-content-title">Əlavə məlumatlar</h4>
-                                <form class="tab-content-form">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="id" class="form-label">Ata adı</label>
-                                            <input autocomplete="false" type="text" class="form-control"
-                                                id="father-name" placeholder="Text">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="surname" class="form-label">Tədris xarici dil</label>
-                                            <select name="" class="form-select">
-                                                <option value="">asdgsdh</option>
-                                                <option value="">csddsc</option>
-                                                <option value="">jhmjhjhm</option>
-                                                <option value="">yytrry</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="surname" class="form-label">Yasadığn region</label>
-                                            <select name="" class="form-select">
-                                                <option value="">asdgsdh</option>
-                                                <option value="">csddsc</option>
-                                                <option value="">jhmjhjhm</option>
-                                                <option value="">yytrry</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="surname" class="form-label">Sinif seçimi</label>
-                                            <select name="" class="form-select">
-                                                <option value="">asdgsdh</option>
-                                                <option value="">csddsc</option>
-                                                <option value="">jhmjhjhm</option>
-                                                <option value="">yytrry</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="surname" class="form-label">Yasadığn region</label>
-                                            <select name="" class="form-select">
-                                                <option value="">asdgsdh</option>
-                                                <option value="">csddsc</option>
-                                                <option value="">jhmjhjhm</option>
-                                                <option value="">yytrry</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+            <div class="inner-navigation">
+                <div class="page-title">
+                    <a href="#">
+                        <h2>Profile</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="profile-container-inner">
+                    <div class="profile-container-cover"></div>
+                    <div class="profile-container-details">
+                        <div class="profile-container-details-inner">
+                            <img src="./assets/img/employee-01.png" alt="" class="profile-container-details-pp">
+                            <h2 class="profile-container-details-title">Məmmədova Aysel</h2>
+                            <span class="profile-container-details-class"><span>10</span>. sinif</span>
                         </div>
                     </div>
-
-                    <div class="btn-groups d-flex btn-groups-bottom parent-btns">
-                        <a href="#" class="btn rounded-pill btn-back">Ləğv edin</a>
-                        <a href="./quiz-results-details.html" class="btn rounded-pill btn-style-2">Yadda saxla</a>
+                    <div class="profile-wallet">
+                        <div class="profile-wallet-inner">
+                            <div class="profile-wallet-icon">
+                                <img src="./assets/icons/wallet.svg" alt="">
+                            </div>
+                            <div class="profile-wallet-details">
+                                <h3 class="profile-wallet-title">Balansım</h3>
+                                <p class="profile-wallet-ammount"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="19" viewBox="0 0 16 19" fill="none">
+                                        <path
+                                            d="M1 17.4922V9.49219C1 7.97666 1.7375 6.52321 3.05025 5.45158C4.36301 4.37994 6.14348 3.7779 8 3.7779C9.85652 3.7779 11.637 4.37994 12.9497 5.45158C14.2625 6.52321 15 7.97666 15 9.49219V17.4922M8 1.49219V17.4922"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg> 12</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="vent-count">
+                <div class="vent-count-inner">
+                    <div class="profile-section-title">
+                        <h3>Vent sayı</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 vent-col">
+                            <div class="card text-center">
+                                <div class="card-header border-0 bg-transparent p-0">
+                                    <span class="rounded-pill px-3 py-1 text-white">
+                                        Ən yüksək vent xalı
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">1245</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 vent-col vent-col-center">
+                            <div class="card text-center">
+                                <div class="card-header border-0 bg-transparent p-0">
+                                    <span class="rounded-pill px-3 py-1 text-white">
+                                        Ümumi vent xalı
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">1245</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 vent-col">
+                            <div class="card text-center">
+                                <div class="card-header border-0 bg-transparent p-0">
+                                    <span class="rounded-pill px-3 py-1 text-white">
+                                        Son müsabiqə vent xalı
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">1245</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test-titles">
+                <div class="test-titles-inner">
+                    <div class="profile-section-title">
+                        <h3>Test/Sınaq</h3>
+                    </div>
+                    <div class="swiper test-titles-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Ümumi sınaqlar
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Günlük Testlər
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Quizlər
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Müsabiqələr
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Olimpiadalar
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    Viktorinalar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="success-rate-inner">
+                <div class="success-rate-inner-page">
+                    <div class="profile-section-title">
+                        <h3>Uğur dərəcəsi | Ümumi sınaqlar</h3>
+                        <div class="dropdown-section dropdown">
+                            <button class="btn btn-light dropdown-button dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Today
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-value="Bu gün">Bu gün</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Bu həftə">Bu həftə</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Bu ay">Bu ay</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="success-metrics-overview">
+                        <div class="row success-metrics-overview-row">
+                            <div class="col-sm-12 col-md-6 success-metrics-count">
+                                <div class="success-metrics-count-inner">
+                                    <div class="profile-section-title">
+                                        <h3>Keçdiyi imtahan sayı</h3>
+                                    </div>
+                                    <div class="success-metrics-count-content">
+                                        <h3 class="success-metrics-count-text">26</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 success-metrics-chart">
+                                <div class="success-metrics-count-inner">
+                                    <div class="profile-section-title">
+                                        <h3>Keçdiyi imtahan sayı</h3>
+                                    </div>
+                                    <div class="success-metrics-count-content">
+                                        <canvas id="examLineChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subjects-statistics">
+                            <div class="subjects-statistics-inner">
+                                <div class="subjects-statistics-content">
+                                    <div class="row mt-4 justify-content-between chart-row">
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">Azərbaycan dili</h6>
+                                                <canvas id="chartAzerbaijaniLanguage"></canvas>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">Riyaziyyat</h6>
+                                                <canvas id="chartMathematics"></canvas>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">Fizika</h6>
+                                                <canvas id="chartPhysics"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="row chart-legend-row">
+                                        <div class="chart-legends">
+                                            <div class="chart-legend green">Doğru cavablar</div>
+                                            <div class="chart-legend red">Yanlış cavablar</div>
+                                            <div class="chart-legend grey">Cavablandırılmayan</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subjects-statistics-content">
+                                    <div class="row mt-5 justify-content-between chart-row">
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">Kimya</h6>
+                                                <canvas id="chartChemistry"></canvas>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">Biologiya</h6>
+                                                <canvas id="chartBiology"></canvas>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">Coğrafiya</h6>
+                                                <canvas id="chartGeography"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="row chart-legend-row">
+                                        <div class="chart-legends">
+                                            <div class="chart-legend green">Doğru cavablar</div>
+                                            <div class="chart-legend red">Yanlış cavablar</div>
+                                            <div class="chart-legend grey">Cavablandırılmayan</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subjects-statistics-content">
+                                    <div class="row mt-5 justify-content-between chart-row">
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">Tarix</h6>
+                                                <canvas id="chartHistory"></canvas>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">İngilis Dili</h6>
+                                                <canvas id="chartEnglishLanguage"></canvas>
+                                        </div>
+                                        <div
+                                            class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                                <h6 class="chart-title">İnformatika</h6>
+                                                <canvas id="chartInformatics"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="row chart-legend-row">
+                                        <div class="chart-legends">
+                                            <div class="chart-legend green">Doğru cavablar</div>
+                                            <div class="chart-legend red">Yanlış cavablar</div>
+                                            <div class="chart-legend grey">Cavablandırılmayan</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
         <div class="notification-panel" id="notification-panel">
             <div class="notification-panel-content" id="notification-panel-content">
                 <div class="notification-panel-header">
@@ -714,6 +799,8 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="./assets/js/chartsjs.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

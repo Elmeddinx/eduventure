@@ -14,11 +14,11 @@
             .vent-col {
                 width: 100%;
                 max-width: 25.67%;
-                height: 113px;                
+                height: 113px;
                 @include mq(desktop-up) {
                     max-width: 33%;
-                    padding-right: calc(var(--bs-gutter-x)* .23);
-                    padding-left: calc(var(--bs-gutter-x)* .23);
+                    padding-right: calc(var(--bs-gutter-x) * 0.23);
+                    padding-left: calc(var(--bs-gutter-x) * 0.23);
                 }
                 @include mq(tablet-portrait-up) {
                     max-width: 100%;
@@ -83,6 +83,9 @@
 
 .profile-section-title {
     margin-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     h3 {
         color: #07898a;
         font-family: Poppins;
