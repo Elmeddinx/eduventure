@@ -4800,8 +4800,24 @@ footer .footer-bottom .footer-social-item {
   width: 209px;
   height: 248px;
 }
+@media only screen and (max-width: 768px) {
+  .success-rate-content .chart-col {
+    width: 100%;
+  }
+}
 .success-rate-content .chart-col a {
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .success-rate-content .chart-col canvas {
+    width: 209px !important;
+    height: 209px !important;
+  }
 }
 .success-rate-content .chart-col .chart-title {
   color: #07898a;
@@ -4820,11 +4836,40 @@ footer .footer-bottom .footer-social-item {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .success-rate-content #one {
+    flex-direction: column-reverse;
+  }
+}
 .success-rate-content #one .row.chart-row {
   width: 100%;
   max-width: 900px;
 }
-.success-rate-content #one .row.chart-legend-row span {
+@media only screen and (max-width: 768px) {
+  .success-rate-content #one .row.chart-row {
+    row-gap: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .success-rate-content #one .row.chart-legend-row {
+    width: 100%;
+  }
+}
+.success-rate-content #one .row.chart-legend-row .chart-legends {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .success-rate-content #one .row.chart-legend-row .chart-legends {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.success-rate-content #one .row.chart-legend-row .chart-legend {
   color: #757575;
   font-family: Poppins;
   font-size: 14px;
@@ -4832,20 +4877,23 @@ footer .footer-bottom .footer-social-item {
   font-weight: 500;
   line-height: 25px;
   letter-spacing: 0.7px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
 }
-.success-rate-content #one .row.chart-legend-row span::after {
+.success-rate-content #one .row.chart-legend-row .chart-legend::before {
   content: "";
   width: 11px;
   height: 11px;
-  display: block;
   border-radius: 11px;
 }
-.success-rate-content #one .row.chart-legend-row span.green::after {
-  background-color: #00BB4A;
+.success-rate-content #one .row.chart-legend-row .chart-legend.green::before {
+  background-color: #00bb4a;
 }
-.success-rate-content #one .row.chart-legend-row span.red::after {
-  background-color: #FF0019;
+.success-rate-content #one .row.chart-legend-row .chart-legend.red::before {
+  background-color: #ff0019;
 }
-.success-rate-content #one .row.chart-legend-row span.gray::after {
-  background-color: #C1C1C1;
+.success-rate-content #one .row.chart-legend-row .chart-legend.grey::before {
+  background-color: #c1c1c1;
 }/*# sourceMappingURL=style.css.map */
