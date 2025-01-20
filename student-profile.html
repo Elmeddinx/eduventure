@@ -389,20 +389,15 @@
                 <div class="success-rate-inner">
                     <div class="success-rate-header">
                         <p class="success-rate-title">Uğur dərəcəsi</p>
-                        <div class="success-rate-dropdown dropdown">
-                            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" id="successRateDropdownMenuButton">
+                        <div class="dropdown-section dropdown">
+                            <button class="btn btn-light dropdown-button dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Today
                             </button>
-
-                            <ul class="success-rate-dropdown-menu dropdown-menu"
-                                aria-labelledby="successRateDropdownMenuButton">
-                                <li><a class="success-rate-dropdown-item dropdown-item" href="#" data-value="Bu gün">Bu
-                                        gün</a></li>
-                                <li><a class="success-rate-dropdown-item dropdown-item" href="#"
-                                        data-value="Bu həftə">Bu həftə</a></li>
-                                <li><a class="success-rate-dropdown-item dropdown-item" href="#" data-value="Bu ay">Bu
-                                        ay</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-value="Bu gün">Bu gün</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Bu həftə">Bu həftə</a></li>
+                                <li><a class="dropdown-item" href="#" data-value="Bu ay">Bu ay</a></li>
                             </ul>
                         </div>
                     </div>
@@ -422,36 +417,139 @@
                     </ul>
                     <div class="tab-content success-rate-content" id="successRateTabContent">
                         <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
-                            <div class="row mt-4 justify-content-between chart-row">
-                                <div class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
-                                    <a href="#">
-                                        <h6 class="chart-title">Ümumi sınaqlar</h6>
-                                        <canvas id="chartUmumi"></canvas>
-                                    </a>
+                            <div class="tab-panel-content">
+                                <div class="row mt-4 justify-content-between chart-row">
+                                    <div
+                                        class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                        <a href="#">
+                                            <h6 class="chart-title">Ümumi sınaqlar</h6>
+                                            <canvas id="chartGeneralExams"></canvas>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                        <a href="#">
+                                            <h6 class="chart-title">Günlük Testlər</h6>
+                                            <canvas id="chartDailyTests"></canvas>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                        <a href="#">
+                                            <h6 class="chart-title">Quizlər</h6>
+                                            <canvas id="chartQuiz"></canvas>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
-                                    <a href="#">
-                                        <h6 class="chart-title">Günlük Testlər</h6>
-                                        <canvas id="chartGunluk"></canvas>
-                                    </a>
-                                </div>
-                                <div class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
-                                    <a href="#">
-                                        <h6 class="chart-title">Quizlər</h6>
-                                        <canvas id="chartQuiz"></canvas>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row chart-legend-row">
-                                <div class="chart-legends">
-                                    <div class="chart-legend green">Doğru cavablar</div>
-                                    <div class="chart-legend red">Yanlış cavablar</div>
-                                    <div class="chart-legend grey">Cavablandırılmayan</div>
+                                <div class="row chart-legend-row">
+                                    <div class="chart-legends">
+                                        <div class="chart-legend green">Doğru cavablar</div>
+                                        <div class="chart-legend red">Yanlış cavablar</div>
+                                        <div class="chart-legend grey">Cavablandırılmayan</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
-                            <p>Bu Profil üçün olan məzmundur.</p>
+                            <div class="tab-panel-content">
+                                <div class="row mt-4 justify-content-between chart-row">
+                                    <div
+                                        class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                        <a href="#">
+                                            <h6 class="chart-title">Müsabiqələr</h6>
+                                            <canvas id="chartCompetitions"></canvas>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                        <a href="#">
+                                            <h6 class="chart-title">Olimpiadalar</h6>
+                                            <canvas id="chartOlympiads"></canvas>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="col-sm-12 col-md-4 text-center d-flex flex-column align-item-center chart-col">
+                                        <a href="#">
+                                            <h6 class="chart-title">Viktorinalar</h6>
+                                            <canvas id="chartTrivia"></canvas>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row chart-legend-row">
+                                    <div class="chart-legends">
+                                        <div class="chart-legend green">Doğru cavablar</div>
+                                        <div class="chart-legend red">Yanlış cavablar</div>
+                                        <div class="chart-legend grey">Cavablandırılmayan</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="platform-metrics">
+                <div class="row platform-metrics-row">
+                    <div id="platform-indicators" class="platform-indicators col-sm-12 col-md-6">
+                        <div class="platform-indicators-inner">
+                            <div class="platform-indicators-header">
+                                <p class="platform-indicators-title">Platforma göstəriciləri</p>
+                                <div class="dropdown-section dropdown">
+                                    <button class="btn btn-light dropdown-button dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Today
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#" data-value="Bu gün">Bu gün</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="Bu həftə">Bu həftə</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="Bu ay">Bu ay</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="platform-indicators-content">
+                                <div class="chart-container mt-4">
+                                    <canvas id="platformTimeChart"></canvas>
+                                </div>
+                                <div class="chart-legends-column mt-3">
+                                    <div class="chart-legends">
+                                        <div class="chart-legend green">Platformada keçirilən vaxt</div>
+                                        <div class="chart-legend orange">İmtahanda keçirilən vaxt</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="exam-count" class="exam-count col-sm-12 col-md-6">
+                        <div class="exam-count-inner">
+                            <div class="exam-count-header">
+                                <p class="exam-count-title">Keçdiyi imtahan sayı</p>
+                                <div class="dropdown-section dropdown">
+                                    <button class="btn btn-light dropdown-button dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Today
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#" data-value="Bu gün">Bu gün</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="Bu həftə">Bu həftə</a></li>
+                                        <li><a class="dropdown-item" href="#" data-value="Bu ay">Bu ay</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="exam-count-content">
+                                <div class="chart-container mt-4">
+                                    <canvas id="examCountChart"></canvas>
+                                </div>
+                                <div class="chart-legends-column mt-3">
+                                    <div class="chart-legends">
+                                        <div class="chart-legend teal">Ümumi sınaqlar: 4</div>
+                                        <div class="chart-legend orange">Sınaqlar: 4</div>
+                                        <div class="chart-legend light-green">Quizlər: 1</div>
+                                        <div class="chart-legend light-red">Müsabiqələr: 4</div>
+                                        <div class="chart-legend light-grey">Olimpiadalar: 2</div>
+                                        <div class="chart-legend grey">Viktorinalar: -</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -511,6 +609,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="./assets/js/chartsjs.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

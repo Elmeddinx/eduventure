@@ -1,11 +1,9 @@
 .success-rate {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 10px;
     padding: 12px 30px;
     border-radius: 12px;
     background: #f5f5f5;
-    &-inner {
-    }
     &-header {
         width: 100%;
         display: flex;
@@ -21,7 +19,7 @@
         line-height: 31px;
         letter-spacing: 1.05px;
     }
-    &-dropdown {
+    .dropdown-section {
         .dropdown-toggle {
             background-color: #fff;
         }
@@ -82,7 +80,7 @@
                 letter-spacing: 0.9px;
             }
         }
-        #one {
+        .tab-panel-content {
             width: 100%;
             display: flex;
             flex-direction: column;
