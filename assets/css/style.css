@@ -284,6 +284,11 @@ body {
     display: none;
   }
 }
+@media only screen and (max-width: 992px) {
+  .children-dropdown {
+    margin-left: 20px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .children-dropdown-mb {
     display: flex;
@@ -1091,11 +1096,6 @@ footer .footer-bottom .footer-social-item {
 @media only screen and (min-width: 992px) {
   .main-header .hamburger-menu {
     display: none;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .main-header .hamburger-menu {
-    margin-right: 20px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -5449,4 +5449,85 @@ footer .footer-bottom .footer-social-item {
 }
 .balance-container .balance-row .transactions-table table tbody tr:last-child {
   border-bottom: none; /* Sonuncu satırda sərhəd olmasın */
+}
+
+.rating {
+  margin-top: 24px;
+}
+.rating-inner {
+  overflow-x: auto;
+}
+.rating-inner::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.rating-inner::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background: #07898a;
+}
+.rating-inner::-webkit-scrollbar-track {
+  border-radius: 99px;
+  background: #d9d9d9;
+}
+.rating-inner .custom-table {
+  min-width: 882px;
+}
+.rating-inner .custom-table table {
+  min-width: 882px;
+}
+.rating-inner .custom-table table thead tr th {
+  border: 0.3px solid #fff;
+  background: #07898a;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rating-inner .custom-table table .vent-score {
+  color: #ed7500;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rating-inner .custom-table .form-filter-row {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+.rating-inner .custom-table .form-filter-row .custom-input {
+  position: relative;
+  margin-right: 16px;
+  max-width: 374px;
+}
+.rating-inner .custom-table .form-filter-row .custom-input img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 12px;
+  top: 27px;
+  transform: translateY(-50%);
+}
+.rating-inner .custom-table .form-filter-row .custom-input .form-control {
+  padding: 12px 12px 12px 36px;
+  border-radius: 999px;
+  background: #f7f7f7;
+  color: #838383;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+.rating-inner .custom-table .form-filter-row .custom-input .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+.rating-inner .custom-table .form-filter-row .custom-select {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

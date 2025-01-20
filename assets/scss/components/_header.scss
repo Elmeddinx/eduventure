@@ -10,9 +10,9 @@
         @include mq(tablet-landscape-down) {
             display: none;
         }
-        @include mq(tablet-landscape-up) {
-            margin-right: 20px;
-        }
+        // @include mq(tablet-landscape-up) {
+        //     margin-right: 20px;
+        // }
         @include mq(tablet-portrait-up) {
             margin-right: auto;
         }

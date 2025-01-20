@@ -1,0 +1,85 @@
+.rating {
+    margin-top: 24px;
+    &-inner {
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background: #07898a;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 99px;
+            background: #d9d9d9;
+        }
+        .custom-table {
+            min-width: 882px;
+            table {
+                min-width: 882px;
+                thead {
+                    tr {
+                        th {
+                            border: 0.3px solid #fff;
+                            background: #07898a;
+                            color: #fff;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .vent-score {
+                    color: #ed7500;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+            .form-filter-row {
+                margin-bottom: 14px;
+                display: flex;
+                align-items: center;
+
+                .custom-input {
+                    position: relative;
+                    margin-right: 16px;
+                    max-width: 374px;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        left: 12px;
+                        top: 27px;
+                        transform: translateY(-50%);
+                    }
+                    .form-control {
+                        padding: 12px 12px 12px 36px;
+                        border-radius: 999px;
+                        background: #f7f7f7;
+                        color: #838383;
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        border: none;
+                        &:focus {
+                            box-shadow: none;
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                }
+                .custom-select {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -388,4 +388,28 @@ document.querySelectorAll(".dropdown-section .dropdown-item").forEach(function(i
   });
 });
 
+$(document).ready(function() {
+  // TopList select2 ile
+  $('#topList').select2({
+      minimumResultsForSearch: Infinity, // Aramayı devre dışı bırak
+      width: '100%' // Genişliği konteynere uyacak şekilde ayarla
+  });
+
+  // VentScore select2 ile (arama kutusu etkin)
+  $('#ventScore').select2({
+      placeholder: "Bir skor seçin",
+      allowClear: true,
+      width: '100%' // Genişliği konteynere uyacak şekilde ayarla
+  });
+
+  // ClassSelect select2 ile
+  $('#classSelect').select2({
+      minimumResultsForSearch: Infinity, // Aramayı devre dışı bırak
+      width: '100%' // Genişliği konteynere uyacak şekilde ayarla
+  });
+
+  // Dropdown yüksekliğini kontrol etmek için CSS kullanıyoruz.
+  // Ek bir JavaScript koduna gerek yok.
+});
+
 

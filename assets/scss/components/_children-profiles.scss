@@ -7,6 +7,9 @@
     @include mq(tablet-portrait-up) {
         display: none;
     }
+    @include mq(tablet-landscape-up) {
+        margin-left: 20px;
+    }
     &-mb {
         @include mq(tablet-portrait-up) {
             display: flex;
