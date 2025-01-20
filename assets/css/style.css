@@ -5308,4 +5308,145 @@ footer .footer-bottom .footer-social-item {
 }
 .subjects-statistics-content .chart-legend-row .chart-legend.grey::before {
   background-color: #c1c1c1;
+}
+
+.balance-container {
+  margin-top: 80px;
+}
+.balance-container .balance-row {
+  row-gap: 30px;
+}
+.balance-container .balance-row .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.balance-container .balance-row .card .card-overlay {
+  padding: 35px;
+}
+.balance-container .balance-row .card .card-overlay .card-title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.54;
+}
+.balance-container .balance-row .card .card-overlay .card-amount {
+  display: flex;
+  align-items: center;
+}
+.balance-container .balance-row .card .card-overlay .card-amount .card-count {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.balance-container .balance-row .card .card-overlay .card-amount .card-currency {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 992px) {
+  .balance-container .balance-row .card-column {
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .balance-container .balance-row .card-column {
+    display: flex;
+    flex-direction: column;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+.balance-container .balance-row .balance-increases {
+  margin-top: 16px;
+}
+.balance-container .balance-row .balance-increases-btn-group {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  cursor: pointer;
+}
+.balance-container .balance-row .balance-increases-btn-group .plus-btn {
+  border-radius: 999px;
+  background: #04c2c4;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.balance-container .balance-row .balance-increases-btn-group .text-btn {
+  border-radius: 999px;
+  background: #04c2c4;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 5px 10px;
+  width: 162px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.balance-container .balance-row .transactions-table {
+  overflow: auto;
+  height: 368px;
+}
+.balance-container .balance-row .transactions-table::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.balance-container .balance-row .transactions-table::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background: #07898A;
+}
+.balance-container .balance-row .transactions-table::-webkit-scrollbar-track {
+  border-radius: 99px;
+  background: #D9D9D9;
+}
+.balance-container .balance-row .transactions-table table {
+  border: 1px solid #dee2e6;
+}
+.balance-container .balance-row .transactions-table table thead {
+  position: sticky;
+}
+.balance-container .balance-row .transactions-table table thead th {
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #dee2e6;
+}
+.balance-container .balance-row .transactions-table table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+.balance-container .balance-row .transactions-table table tbody {
+  height: 326.4px;
+  overflow-y: scroll;
+}
+.balance-container .balance-row .transactions-table table tbody td {
+  border: 1px solid #dee2e6;
+  text-align: center;
+  vertical-align: middle; /* Mətnin mərkəzləşdirilməsi */
+}
+.balance-container .balance-row .transactions-table table tbody tr {
+  border-bottom: 1px solid #dee2e6; /* Satır altı sərhəd */
+}
+.balance-container .balance-row .transactions-table table tbody tr:last-child {
+  border-bottom: none; /* Sonuncu satırda sərhəd olmasın */
 }/*# sourceMappingURL=style.css.map */
