@@ -1,0 +1,87 @@
+.price-cards {
+    margin-bottom: 57px;
+    &-inner {
+    }
+    &-row {
+        align-items: center;
+        row-gap: 30px;
+        .price-card-cont {
+            &:nth-child(2) {
+                .price-card {
+                    @include mq (desktop-down) {
+                        padding: 48px 16px;
+                    }
+                }
+            }
+        }
+        .price-card {
+            background-color: #f8f8fa;
+            border-radius: 24px;
+            padding: 24px 16px;
+            text-align: center;
+            height: 100%;
+            &-title {
+                color: #757575;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 31px;
+                letter-spacing: 0.9px;
+                margin-bottom: 24px;
+            }
+            &-price {
+                color: #07898a;
+                font-family: Poppins;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 31px;
+                letter-spacing: 3px;
+                margin-bottom: 32px;
+                .azn-symbol {
+                    position: relative;
+                    bottom: 5px;
+                }
+            }
+            &-duration {
+                color: #757575;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 31px;
+                letter-spacing: 0.9px;
+            }
+            &-features {
+                margin-bottom: 24px;
+                &-item {
+                    color: #5b5b5b;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 31px;
+                    letter-spacing: 0.9px;
+                    text-align: left;
+                }
+            }
+            &-btn {
+                padding: 8px 12px;
+                border-radius: 999px;
+                border: 1px solid #04c2c4;
+                color: #07898a;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                &:hover {
+                    background-color: #07898a;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
