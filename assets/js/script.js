@@ -373,43 +373,42 @@ var swiper = new Swiper(".test-titles-swiper", {
   },
 });
 
-document.querySelectorAll(".dropdown-section .dropdown-item").forEach(function(item) {
-  item.addEventListener("click", function(e) {
+document.querySelectorAll(".dropdown-section .dropdown-item").forEach(function (item) {
+  item.addEventListener("click", function (e) {
     e.preventDefault();
 
     // İstifadəçinin seçdiyi dəyəri alırıq
     const newValue = this.getAttribute("data-value");
 
     // İlgili dropdown düyməsini tapırıq (ən yaxın valideyn elementi ilə)
-    const dropdownButton = this.closest(".dropdown-section").querySelector(".dropdown-button"); 
+    const dropdownButton = this.closest(".dropdown-section").querySelector(".dropdown-button");
 
     // Dropdown düyməsinin məzmununu yeniləyirik
     dropdownButton.textContent = newValue;
   });
 });
 
-$(document).ready(function() {
-  // TopList select2 ile
+$(document).ready(function () {
   $('#topList').select2({
-      minimumResultsForSearch: Infinity, // Aramayı devre dışı bırak
-      width: '100%' // Genişliği konteynere uyacak şekilde ayarla
+    placeholder: "Top listlər",
+    allowClear: false,
+    minimumResultsForSearch: Infinity, 
+    width: '100%' 
   });
 
-  // VentScore select2 ile (arama kutusu etkin)
   $('#ventScore').select2({
-      placeholder: "Bir skor seçin",
-      allowClear: true,
-      width: '100%' // Genişliği konteynere uyacak şekilde ayarla
+    placeholder: "Vent xalı",
+    allowClear: false,
+    width: '100%'
   });
 
-  // ClassSelect select2 ile
   $('#classSelect').select2({
-      minimumResultsForSearch: Infinity, // Aramayı devre dışı bırak
-      width: '100%' // Genişliği konteynere uyacak şekilde ayarla
+    placeholder: "Sinif",
+    allowClear: false,
+    minimumResultsForSearch: Infinity, 
+    width: '100%'
   });
 
-  // Dropdown yüksekliğini kontrol etmek için CSS kullanıyoruz.
-  // Ek bir JavaScript koduna gerek yok.
 });
 
 

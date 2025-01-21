@@ -87,6 +87,18 @@
             height: 600px;
             overflow-y: scroll;
             padding-right: 20px;
+            &::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 99px;
+                background: #07898a;
+            }
+            &::-webkit-scrollbar-track {
+                border-radius: 99px;
+                background: #d9d9d9;
+            }
         }
         .notification {
             width: 100%;
