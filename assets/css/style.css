@@ -2932,6 +2932,78 @@ footer .footer-bottom .footer-social-item {
   background-color: transparent;
   border: 1px solid #c1c1c1;
 }
+.parent-register-content .otp-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.parent-register-content .otp-container-inner {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parent-register-content .otp-container .otp-code-inner {
+  max-width: 335px;
+}
+.parent-register-content .otp-container .phone-title {
+  color: #5a5a5a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+}
+.parent-register-content .otp-container .otp-title {
+  color: #1b1e28;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.parent-register-content .otp-container .otp-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+.parent-register-content .otp-container .resend-cont {
+  margin-top: 21px;
+}
+.parent-register-content .otp-container .resend-link {
+  color: #7d848d;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.parent-register-content .otp-container .resend-link.disabled {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+.parent-register-content .otp-container .resend-link:hover {
+  text-decoration: underline;
+}
+.parent-register-content .otp-container .timer-text {
+  color: #7d848d;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
 
 .parent-existing-header {
   padding-top: 25px;
@@ -5933,4 +6005,177 @@ footer .footer-bottom .footer-social-item {
   background-color: #fff !important;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) !important;
   border: none;
+}
+
+.login {
+  width: 100%;
+  padding: 100px 0;
+}
+@media only screen and (max-width: 768px) {
+  .login {
+    padding: 50px 0;
+  }
+}
+.login .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-inner {
+  display: flex;
+  width: 100%;
+  max-width: 535px;
+  height: 597px;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #f6f6f6;
+}
+@media only screen and (max-width: 480px) {
+  .login-inner {
+    padding: 50px 15px;
+  }
+}
+.login-inner .logo {
+  width: 174.996px;
+  height: 107.208px;
+}
+.login-inner .login-title {
+  color: #000;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.login-inner .login-otp-title {
+  color: #140101;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  text-transform: capitalize;
+}
+.login-inner form {
+  width: 100%;
+  max-width: 335px;
+}
+.login-inner form .form-label {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.login-inner form .form-control {
+  border-radius: 8px;
+  border: 1px solid #c1c1c1;
+  background: #fff;
+  height: 52px;
+}
+.login-inner form .col-12:first-child {
+  margin-bottom: 12px !important;
+}
+.login-inner form .forget-password {
+  color: #2260ff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 8px;
+}
+.login-inner form .login-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px 40px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 999px;
+  background: #04c2c4;
+}
+.login .otp-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login .otp-container-inner {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .otp-container .otp-code-inner {
+  max-width: 335px;
+}
+.login .otp-container .phone-title {
+  color: #5a5a5a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+}
+.login .otp-container .otp-title {
+  color: #1b1e28;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.login .otp-container .otp-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+.login .otp-container .resend-cont {
+  margin-top: 21px;
+}
+.login .otp-container .resend-link {
+  color: #7d848d;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.login .otp-container .resend-link.disabled {
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+.login .otp-container .resend-link:hover {
+  text-decoration: underline;
+}
+.login .otp-container .timer-text {
+  color: #7d848d;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }/*# sourceMappingURL=style.css.map */

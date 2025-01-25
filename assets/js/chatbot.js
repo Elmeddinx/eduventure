@@ -30,9 +30,41 @@ class MockWebSocket {
 
     send(message) {
         console.log(`Mesaj gönderildi: ${message}`);
+
+        // Gelen mesajı inceleyip, cevap olarak JSON vereceğimiz bir senaryo oluşturuyoruz.
+        // Örneğin, "getChoices" mesajı gelirse, backend çoklu seçenek döndürüyor.
+        // "Option X" gelirse, ona uygun bir cevap dönüyoruz.
+
         setTimeout(() => {
             if (this.onmessage) {
-                this.onmessage({ data: `Simüle edilmiş bot yanıtı: ${message}` });
+                let serverResponse;
+
+                if (message === 'getChoices') {
+                    // Backend'den çoklu seçenek geldiğini simüle ediyoruz
+                    serverResponse = {
+                        type: 'choices',
+                        text: 'Aşağıdakilerden birini seçiniz:',
+                        choices: [
+                            { label: 'Seçenek 1', value: 'Option1' },
+                            { label: 'Seçenek 2', value: 'Option2' },
+                            { label: 'Seçenek 3', value: 'Option3' }
+                        ]
+                    };
+                } else if (message.startsWith('Option')) {
+                    // Seçilen seçeneğe göre özel bir cevap
+                    serverResponse = {
+                        type: 'message',
+                        text: `Sunucudan gelen cevap: ${message} seçildi!`
+                    };
+                } else {
+                    // Normal bir metin mesajıysa
+                    serverResponse = {
+                        type: 'message',
+                        text: `Simüle edilmiş bot yanıtı: ${message}`
+                    };
+                }
+
+                this.onmessage({ data: JSON.stringify(serverResponse) });
             }
         }, 1000);
     }
@@ -50,6 +82,7 @@ class ChatBot {
         this.messageInput = document.getElementById(options.messageInputId);
         this.messagesInner = document.querySelector(options.messagesInnerSelector);
         this.chatbotInner = document.querySelector(options.chatbotInnerSelector);
+        this.chatbotChoices = document.getElementById('chatbotChoices');
         this.userScrolled = false;
         this.initSocket();
         this.addEventListeners();
@@ -62,10 +95,23 @@ class ChatBot {
 
         this.socket.onopen = () => {
             console.log('WebSocket bağlantısı kuruldu.');
+            // Bağlantı açıldığında sunucudan seçimleri isteyebilirsiniz (opsiyonel)
+            // this.socket.send('getChoices');
         };
 
         this.socket.onmessage = (event) => {
-            this.addMessage(event.data, 'in');
+            // Sunucudan gelen veriyi JSON olarak parselleyip
+            // gelen 'type' bilgisini kontrol ederek işlem yapıyoruz
+            const data = JSON.parse(event.data);
+
+            if (data.type === 'choices') {
+                // Bot çoklu seçenek gönderiyor
+                this.addMessage(data.text, 'in');
+                this.addChoices(data.choices);
+            } else if (data.type === 'message') {
+                // Bot normal bir metin mesajı gönderiyor
+                this.addMessage(data.text, 'in');
+            }
         };
     }
 
@@ -78,10 +124,34 @@ class ChatBot {
             }
         });
         this.chatbotInner.addEventListener('scroll', () => {
-            const threshold = 50; // Piksel cinsinden bir eşik değeri
+            const threshold = 50;
             const position = this.chatbotInner.scrollTop + this.chatbotInner.clientHeight;
             const height = this.chatbotInner.scrollHeight;
             this.userScrolled = height - position > threshold;
+        });
+    }
+
+    // Seçenekleri DOM'a ekleyen fonksiyon
+    addChoices(choicesArray) {
+        // Eski seçenekleri temizleyelim
+        this.chatbotChoices.innerHTML = '';
+
+        choicesArray.forEach(choice => {
+            const button = document.createElement('button');
+            button.classList.add('chatbot-choice-button');
+            button.textContent = choice.label;
+
+            button.addEventListener('click', () => {
+                // Kullanıcı seçim yaptığında, bu seçimi 'out' mesaj olarak ekleyip
+                // sunucuya gönderiyoruz
+                this.addMessage(choice.label, 'out');
+                this.socket.send(choice.value);
+
+                // Seçimi yaptıktan sonra seçenekleri temizleyelim
+                this.chatbotChoices.innerHTML = '';
+            });
+
+            this.chatbotChoices.appendChild(button);
         });
     }
 
@@ -100,7 +170,8 @@ class ChatBot {
 
         const avatarDiv = document.createElement('div');
         avatarDiv.className = 'chatbot-avatar';
-        avatarDiv.innerHTML = `<img src="${type === 'in' ? './assets/img/chatbot-avatar.svg' : './assets/img/sender-avatar.png'}" alt="">`;
+        avatarDiv.innerHTML = `<img src="${type === 'in' ? './assets/img/chatbot-avatar.svg' : './assets/img/sender-avatar.png'
+            }" alt="">`;
 
         const messageContentDiv = document.createElement('div');
         messageContentDiv.className = type === 'in' ? 'chatbot-in-message' : 'chatbot-out-message';
@@ -114,7 +185,6 @@ class ChatBot {
         messageDiv.appendChild(messageContentDiv);
         this.messagesInner.appendChild(messageDiv);
 
-        // Yeni mesaj eklenince scroll işlemini beklemek için requestAnimationFrame kullanıyoruz
         requestAnimationFrame(() => {
             this.scrollToBottom();
         });
@@ -140,4 +210,5 @@ document.addEventListener('DOMContentLoaded', () => {
         chatbotInnerSelector: '.chatbot-inner'
     });
 });
+
 

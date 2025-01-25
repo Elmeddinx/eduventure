@@ -1,0 +1,168 @@
+.login {
+    width: 100%;
+    padding: 100px 0;
+    @include mq(tablet-portrait-up) {
+        padding: 50px 0;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-inner {
+        display: flex;
+        width: 100%;
+        max-width: 535px;
+        height: 597px;
+        padding: 50px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        flex-shrink: 0;
+        border-radius: 40px;
+        background: #f6f6f6;
+        @include mq(phone-only) {
+            padding: 50px 15px;
+        }
+        .logo {
+            width: 174.996px;
+            height: 107.208px;
+        }
+        .login-title {
+            color: #000;
+            text-align: center;
+            font-family: Raleway;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+        .login-otp-title {
+            color: #140101;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 27px;
+            text-transform: capitalize;
+        }
+        form {
+            width: 100%;
+            max-width: 335px;
+            .form-label {
+                color: rgba(0, 0, 0, 0.87);
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 0;
+            }
+            .form-control {
+                border-radius: 8px;
+                border: 1px solid #c1c1c1;
+                background: #fff;
+                height: 52px;
+            }
+            .col-12 {
+                &:first-child {
+                    margin-bottom: 12px !important;
+                }
+            }
+            .forget-password {
+                color: #2260ff;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 8px;
+            }
+            .login-btn {
+                width: 100%;
+                margin-top: 30px;
+                padding: 15px 40px;
+                color: #fff;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 999px;
+                background: #04c2c4;
+            }
+        }
+    }
+    .otp-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-inner {
+            width: 100%;
+            max-width: 375px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .otp-code-inner {
+            max-width: 335px;
+        }
+        .phone-title {
+            color: #5a5a5a;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 111.111% */
+        }
+        .otp-title {
+            color: #1b1e28;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        .otp-input {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 1.25rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin: 0 5px;
+        }
+        .resend-cont {
+            margin-top: 21px;
+        }
+        .resend-link {
+            color: #7d848d;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            text-decoration: none;
+            margin-right: 20px;
+            &.disabled {
+                user-select: none !important;
+            }
+        }
+        .resend-link:hover {
+            text-decoration: underline;
+        }
+        .timer-text {
+            color: #7d848d;
+            text-align: right;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+}
