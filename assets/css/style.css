@@ -2989,9 +2989,8 @@ footer .footer-bottom .footer-social-item {
   margin-right: 20px;
 }
 .parent-register-content .otp-container .resend-link.disabled {
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-          user-select: none !important;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 .parent-register-content .otp-container .resend-link:hover {
   text-decoration: underline;
@@ -6164,9 +6163,8 @@ footer .footer-bottom .footer-social-item {
   margin-right: 20px;
 }
 .login .otp-container .resend-link.disabled {
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-          user-select: none !important;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 .login .otp-container .resend-link:hover {
   text-decoration: underline;
