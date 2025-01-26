@@ -12,7 +12,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        @include mq (tablet-portrait-up) {
+        @include mq(tablet-portrait-up) {
             padding: 20px 15px;
             flex-direction: column;
         }
@@ -22,7 +22,7 @@
             width: 96px;
             height: 96px;
             overflow: hidden;
-            @include mq (tablet-portrait-up) {
+            @include mq(tablet-portrait-up) {
                 width: 100%;
                 height: 144px;
             }
@@ -38,7 +38,7 @@
             height: 86px;
             background: #898989;
             margin: 0 16px;
-            @include mq (tablet-portrait-up) {
+            @include mq(tablet-portrait-up) {
                 width: 100%;
                 height: 0.6px;
                 margin: 16px 0;
@@ -46,7 +46,7 @@
         }
         .card-content {
             width: 85%;
-            @include mq (tablet-portrait-up) {
+            @include mq(tablet-portrait-up) {
                 width: 100%;
             }
             &-top {
@@ -127,5 +127,68 @@
                 }
             }
         }
+    }
+}
+.anevent-container {
+    margin-top: 30px;
+    .anevent-main-img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .anevent-content-details {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mq(tablet-portrait-up) {
+            margin-top: 21px;
+        }
+        .author-icon {
+            img {
+                width: 18px;
+                height: 18px;
+            }
+            span {
+                color: #838383;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .reader-icon {
+            img {
+                width: 21px;
+                height: 21px;
+            }
+            span {
+                color: #838383;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    .anevent-content-title {
+        color: #000;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 18px;
+    }
+    .anevent-content-text {
+        color: #838383;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 36px;
     }
 }
