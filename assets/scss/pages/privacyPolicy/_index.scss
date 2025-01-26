@@ -1,0 +1,87 @@
+.privacy-policy {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 57px;
+    margin-bottom: 130px;
+    position: relative;
+    @include mq(tablet-portrait-up) {
+        margin-bottom: 170px;
+        row-gap: 48px;
+    }
+    &-bottom {
+        width: calc(100% - 271px);
+        height: 90px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border-top: 0.5px solid #5a5a5a;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 70px;
+        @include mq(tablet-landscape-up) {
+            width: 100%;
+        }
+        @include mq(tablet-portrait-up) {
+            height: 164px;
+            padding: 20px 15px;
+        }
+        .btn-groups {
+            gap: 10px;
+            @include mq(tablet-portrait-up) {
+                flex-direction: column;
+                width: 100%;
+            }
+            .deny-btn {
+                border-radius: 999px;
+                background: #d9d9d9;
+                padding: 15px 40px;
+                color: #fff;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include mq(tablet-portrait-up) {
+                    width: 100%;
+                }
+            }
+            .accept-btn {
+                border-radius: 999px;
+                background: #04c2c4;
+                padding: 15px 40px;
+                color: #fff;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include mq(tablet-portrait-up) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .text-content {
+        h2 {
+            color: #414141;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 31px;
+            letter-spacing: 1.2px;
+        }
+        p {
+            color: #5a5a5a;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 31px;
+            letter-spacing: 0.9px;
+        }
+    }
+}

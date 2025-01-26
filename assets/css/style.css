@@ -598,6 +598,18 @@ body {
   letter-spacing: 1.2px;
   margin-bottom: 0;
 }
+.inner-navigation .page-title .updated-date {
+  margin-top: 12px;
+}
+.inner-navigation .page-title .updated-date span {
+  color: #898989;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.9px;
+}
 .inner-navigation .page-controls {
   position: relative;
 }
@@ -6202,4 +6214,102 @@ footer .footer-bottom .footer-social-item {
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+}
+
+.privacy-policy {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 57px;
+  margin-bottom: 130px;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .privacy-policy {
+    margin-bottom: 170px;
+    row-gap: 48px;
+  }
+}
+.privacy-policy-bottom {
+  width: calc(100% - 271px);
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-top: 0.5px solid #5a5a5a;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 70px;
+}
+@media only screen and (max-width: 992px) {
+  .privacy-policy-bottom {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .privacy-policy-bottom {
+    height: 164px;
+    padding: 20px 15px;
+  }
+}
+.privacy-policy-bottom .btn-groups {
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .privacy-policy-bottom .btn-groups {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.privacy-policy-bottom .btn-groups .deny-btn {
+  border-radius: 999px;
+  background: #d9d9d9;
+  padding: 15px 40px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  .privacy-policy-bottom .btn-groups .deny-btn {
+    width: 100%;
+  }
+}
+.privacy-policy-bottom .btn-groups .accept-btn {
+  border-radius: 999px;
+  background: #04c2c4;
+  padding: 15px 40px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  .privacy-policy-bottom .btn-groups .accept-btn {
+    width: 100%;
+  }
+}
+.privacy-policy .text-content h2 {
+  color: #414141;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 1.2px;
+}
+.privacy-policy .text-content p {
+  color: #5a5a5a;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.9px;
 }/*# sourceMappingURL=style.css.map */
