@@ -1,0 +1,173 @@
+.row {
+    row-gap: 40px;
+    a {
+        text-decoration: none;
+    }
+    .vacancy {
+        max-height: 215px;
+        .card {
+            height: 100%;
+            border-radius: 12px;
+            background: #f5f5f5;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            padding: 16px;
+            .card-header {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+                .card-icon {
+                    background-color: #04c2c4;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                .card-details {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 12px;
+                    span {
+                        color: #838383;
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 14px;
+                    }
+                    .card-date {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 7px;
+                    }
+                    .card-count {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 7px;
+                    }
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+            .card-body {
+                padding: 18px 0 0 0;
+                h3 {
+                    color: #000;
+                    font-family: Poppins;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+                p {
+                    color: #757575;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-bottom: 0;
+                    &.card-more {
+                        @include mq(tablet-portrait-up) {
+                            display: none;
+                        }
+                    }
+                }
+                .card-more {
+                    color: #04c2c4;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+            &:hover {
+                background: #04c2c4;
+                transition: all 0.3s ease;
+                * {
+                    color: #fff !important;
+                }
+                .card-header {
+                    .card-icon {
+                        background-color: #fff;
+                        svg {
+                            path {
+                                fill: #04c2c4;
+                            }
+                        }
+                    }
+                    .card-details {
+                        svg {
+                            fill: #fff;
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+                .card-body {
+                    p {
+                        svg {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include mq(tablet-portrait-up) {
+            &:nth-child(4),
+            &:nth-child(5) {
+                display: none;
+            }
+        }
+    }
+    .more-vacancy {
+        max-height: 215px;
+        min-height: 215px;
+        .card {
+            height: 100%;
+            border-radius: 12px;
+            background: #04c2c4;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            .card-body {
+                h3 {
+                    color: #fff;
+                    font-family: Poppins;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 46px;
+                    @include mq(phone-sm) {
+                        font-size: 28px;
+                    }
+                }
+                .card-more {
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

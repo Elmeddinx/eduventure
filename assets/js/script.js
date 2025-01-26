@@ -411,3 +411,17 @@ $(document).ready(function () {
 
 });
 
+const certificationCheck = document.getElementById('certificationCheck');
+const certificatiUploadCont = document.getElementById('certificatiUploadCont');
+
+if(certificationCheck) {
+
+    // Checkbox durumuna göre container'ı göster/gizle
+    certificationCheck.addEventListener('change', function() {
+        if (this.checked) {
+            certificatiUploadCont.style.display = 'block'; // Checkbox seçiliyse göster
+        } else {
+            certificatiUploadCont.style.display = 'none'; // Checkbox seçili değilse gizle
+        }
+    });
+}

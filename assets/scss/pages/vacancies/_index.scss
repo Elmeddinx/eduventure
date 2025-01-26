@@ -1,0 +1,109 @@
+.vacancies-container {
+    .page-desc {
+        margin-top: 24px;
+        p {
+            color: #4c4c4c;
+            font-family: Raleway;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 31px;
+            letter-spacing: 0.9px;
+            margin-bottom: 0;
+        }
+    }
+    .row {
+        margin-top: 40px;
+        row-gap: 21px;
+        .vacancy {
+            @include mq(tablet-portrait-up) {
+                &:nth-child(4),
+                &:nth-child(5) {
+                    display: flex;
+                }
+            }
+            .card-more {
+                @include mq(tablet-portrait-up) {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
+.vacancy-single-container {
+    .page-details {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        margin-top: 24px;
+        span {
+            color: #838383;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+        }
+        .page-date {
+            display: flex;
+            align-items: center;
+            column-gap: 7px;
+        }
+        .page-count {
+            display: flex;
+            align-items: center;
+            column-gap: 7px;
+        }
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    .vacancy-single-inner {
+        margin-bottom: 40px;
+        .vacancy-single-subtitle {
+            margin-top: 24px;
+            color: #000;
+            font-family: Poppins;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            text-transform: capitalize;
+        }
+        .vacancy-single-list {
+            &-item {
+                color: #3c3c3c;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px;
+            }
+        }
+    }
+    .vacancy-form {
+        margin-bottom: 100px;
+        .img-card {
+            .card {
+                border-radius: 12px 0px 0px 12px;
+                border: 0.2px solid #000;
+                overflow: hidden;
+            }
+            @include mq (desktop-up) {
+                display: none;
+            }
+        }
+        #motivationLetter {
+            height: 116px;
+            resize: none;
+        }
+        #certificatiUploadCont {
+            display: none;
+        }
+        .vacany-btn {
+            justify-content: flex-end;
+        }
+    }
+}
