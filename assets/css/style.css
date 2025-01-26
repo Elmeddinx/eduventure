@@ -6312,4 +6312,178 @@ footer .footer-bottom .footer-social-item {
   font-weight: 400;
   line-height: 31px;
   letter-spacing: 0.9px;
+}
+
+.help-center {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.help-center-container {
+  width: 100%;
+}
+.help-center-header {
+  width: 100%;
+  height: 202px;
+  border-radius: 12px;
+  background: #04c2c4;
+  padding: 0 34px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .help-center-header {
+    height: 318px;
+    padding: 60px 15px 0 15px;
+    align-items: flex-start;
+  }
+}
+.help-center-header::before {
+  content: "";
+  position: absolute;
+  right: 137px;
+  bottom: 0;
+  width: 109px;
+  height: 109px;
+  border-radius: 12px 12px 0px 0px;
+  background: #ff9f41;
+}
+@media only screen and (max-width: 768px) {
+  .help-center-header::before {
+    right: 88px;
+  }
+}
+.help-center-header::after {
+  content: "";
+  position: absolute;
+  right: 49px;
+  bottom: 0;
+  width: 109px;
+  height: 116px;
+  border-radius: 12px 12px 0px 0px;
+  background: rgba(255, 159, 65, 0.5);
+}
+@media only screen and (max-width: 768px) {
+  .help-center-header::after {
+    right: 15px;
+  }
+}
+.help-center-header-inner {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.help-center-header-title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 1.6px;
+}
+@media only screen and (max-width: 768px) {
+  .help-center-header-title {
+    text-align: center;
+  }
+}
+.help-center-header-input {
+  width: 100%;
+  max-width: 684px;
+  position: relative;
+  margin-top: 24px;
+}
+.help-center-header-input img {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+.help-center-header-input input {
+  border-radius: 41px;
+  background: #fff;
+  border: none;
+  padding: 12px 12px 12px 46px;
+  color: #838383;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 380px) {
+  .help-center-header-input input {
+    font-size: 16px;
+  }
+}
+.help-center-header-input input::-moz-placeholder {
+  color: #838383;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.help-center-header-input input::placeholder {
+  color: #838383;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 380px) {
+  .help-center-header-input input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .help-center-header-input input::placeholder {
+    font-size: 16px;
+  }
+}
+.help-center-header-input input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.help-center-row {
+  margin-top: 56px;
+  row-gap: 50px;
+  align-items: stretch;
+}
+@media only screen and (max-width: 768px) {
+  .help-center-row {
+    row-gap: 24px;
+  }
+}
+.help-center-row a {
+  text-decoration: none;
+}
+.help-center-row .card {
+  padding: 20px;
+  height: 100%;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.help-center-row .card-icon {
+  width: 44px;
+  height: 44px;
+}
+.help-center-row .card-icon img {
+  width: 100%;
+}
+.help-center-row .card-title {
+  color: #07898a;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 1.05px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
