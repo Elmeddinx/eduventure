@@ -1692,6 +1692,31 @@ footer .footer-bottom .footer-social-item {
   flex-direction: column;
   row-gap: 17px;
 }
+.chatbot-messages .chatbot-choices {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+  margin-top: 15px;
+}
+.chatbot-messages .chatbot-choices-inner {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 10px;
+}
+.chatbot-messages .chatbot-choices .chatbot-choice-button {
+  border: none;
+  min-width: 48%;
+  width: 80%;
+  padding: 5px 15px;
+  border-radius: 24px 0px 24px 24px;
+  background: #00bf9d;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.24), 0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px -1px 1px 0px rgba(0, 0, 0, 0.08);
+  color: #fff;
+  cursor: pointer;
+}
 .chatbot-message {
   width: 100%;
   display: flex;
@@ -1751,6 +1776,7 @@ footer .footer-bottom .footer-social-item {
 .chatbot-sender {
   width: 100%;
   margin-top: 32px;
+  display: none;
 }
 .chatbot-sender-inner {
   width: 100%;
