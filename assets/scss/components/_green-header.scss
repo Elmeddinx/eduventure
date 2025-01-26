@@ -1,0 +1,103 @@
+.green-header {
+    width: 100%;
+    height: 202px;
+    border-radius: 12px;
+    background: #04c2c4;
+    padding: 0 34px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include mq(tablet-portrait-up) {
+        height: 318px;
+        padding: 60px 15px 0 15px;
+        align-items: flex-start;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        right: 137px;
+        bottom: 0;
+        width: 109px;
+        height: 109px;
+        border-radius: 12px 12px 0px 0px;
+        background: #ff9f41;
+        @include mq(tablet-portrait-up) {
+            right: 88px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 49px;
+        bottom: 0;
+        width: 109px;
+        height: 116px;
+        border-radius: 12px 12px 0px 0px;
+        background: rgba(255, 159, 65, 0.5);
+        @include mq(tablet-portrait-up) {
+            right: 15px;
+        }
+    }
+    &-inner {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    &-title {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 31px;
+        letter-spacing: 1.6px;
+        @include mq(tablet-portrait-up) {
+            text-align: center;
+        }
+    }
+    &-input {
+        width: 100%;
+        max-width: 684px;
+        position: relative;
+        margin-top: 24px;
+        img {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+        }
+        input {
+            border-radius: 41px;
+            background: #fff;
+            border: none;
+            padding: 12px 12px 12px 46px;
+            color: #838383;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include mq(phone-sm) {
+                font-size: 16px;
+            }
+            &::placeholder {
+                color: #838383;
+                font-family: Poppins;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                @include mq(phone-sm) {
+                    font-size: 16px;
+                }
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
