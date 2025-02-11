@@ -387,28 +387,32 @@ document.querySelectorAll(".dropdown-section .dropdown-item").forEach(function (
     dropdownButton.textContent = newValue;
   });
 });
-
 $(document).ready(function () {
-  $('#topList').select2({
-    placeholder: "Top listlər",
-    allowClear: false,
-    minimumResultsForSearch: Infinity, 
-    width: '100%' 
-  });
+  if(document.getElementById("topList")) {
+    $('#topList').select2({
+      placeholder: "Top listlər",
+      allowClear: false,
+      minimumResultsForSearch: Infinity, 
+      width: '100%' 
+    });
+  }
 
-  $('#ventScore').select2({
-    placeholder: "Vent xalı",
-    allowClear: false,
-    width: '100%'
-  });
+  if(document.getElementById("ventScore")) {
+    $('#ventScore').select2({
+      placeholder: "Vent xalı",
+      allowClear: false,
+      width: '100%'
+    });
+  }
 
-  $('#classSelect').select2({
-    placeholder: "Sinif",
-    allowClear: false,
-    minimumResultsForSearch: Infinity, 
-    width: '100%'
-  });
-
+  if(document.getElementById("classSelect")) {
+    $('#classSelect').select2({
+      placeholder: "Sinif",
+      allowClear: false,
+      minimumResultsForSearch: Infinity, 
+      width: '100%'
+    });
+  }
 });
 
 const certificationCheck = document.getElementById('certificationCheck');
