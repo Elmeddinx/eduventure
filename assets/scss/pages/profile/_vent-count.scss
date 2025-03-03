@@ -24,14 +24,14 @@
                     max-width: 100%;
                 }
                 .card {
-                    background-color: #d9eeee;
+                    background-color: #c8d0f9;
                     border-radius: 10px;
                     height: 100%;
                     .card-header {
                         position: relative;
                         overflow: visible;
                         .rounded-pill {
-                            background-color: #07898a;
+                            background-color: #092BC8;
                             position: absolute;
                             top: -15px;
                             left: 50%;
@@ -87,7 +87,7 @@
     justify-content: space-between;
     align-items: center;
     h3 {
-        color: #07898a;
+        color: #092BC8;
         font-family: Poppins;
         font-size: 21px;
         font-style: normal;

@@ -97,7 +97,7 @@ const platformTimeChartData = {
     labels: ['Platformada keçirilən vaxt', 'İmtahanda keçirilən vaxt'],
     datasets: [{
         data: [75, 25], // Faiz dəyərləri
-        backgroundColor: ['#04C2C4', '#FF9F41'], // Rənglər
+        backgroundColor: ['#394ff3', '#FF9F41'], // Rənglər
         hoverOffset: 4
     }]
 };

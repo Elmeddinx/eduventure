@@ -67,7 +67,7 @@
             }
             &.active {
                 border-radius: 8px;
-                background-color: #07898a;
+                background-color: #092BC8;
                 color: #fff;
                 @include mq(tablet-portrait-up) {
                     background-color: transparent;
@@ -107,7 +107,7 @@
         }
         .tab-content {
             .tab-content-title {
-                color: #07898a;
+                color: #092BC8;
                 font-family: Poppins;
                 font-size: 24px;
                 font-style: normal;

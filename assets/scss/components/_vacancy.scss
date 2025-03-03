@@ -19,7 +19,7 @@
                 border: 0;
                 padding: 0;
                 .card-icon {
-                    background-color: #04c2c4;
+                    background-color: #394ff3;
                     width: 44px;
                     height: 44px;
                     border-radius: 4px;
@@ -89,7 +89,7 @@
                     }
                 }
                 .card-more {
-                    color: #04c2c4;
+                    color: #394ff3;
                     font-family: Poppins;
                     font-size: 14px;
                     font-style: normal;
@@ -98,7 +98,7 @@
                 }
             }
             &:hover {
-                background: #04c2c4;
+                background: #394ff3;
                 transition: all 0.3s ease;
                 * {
                     color: #fff !important;
@@ -108,7 +108,7 @@
                         background-color: #fff;
                         svg {
                             path {
-                                fill: #04c2c4;
+                                fill: #394ff3;
                             }
                         }
                     }
@@ -145,7 +145,7 @@
         .card {
             height: 100%;
             border-radius: 12px;
-            background: #04c2c4;
+            background: #394ff3;
             box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
             .card-body {
                 h3 {

@@ -60,19 +60,19 @@
         &.active-item {
             padding: 10px;
             border-radius: 8px;
-            background-color: #d9eeee;
+            background-color: #c8d0f9;
             @include mq(tablet-portrait-up) {
                 background-color: transparent;
                 border-radius: unset;
             }
             a {
-                color: #07898a;
+                color: #092BC8;
                 p {
                     position: relative;
                     @include mq(tablet-portrait-up) {
                         &::before {
                             content: "•";
-                            color: #07898a;
+                            color: #092BC8;
                             font-size: 16px;
                             margin-right: 10px;
                         }
@@ -80,7 +80,7 @@
                 }
             }
             path {
-                stroke: #07898a;
+                stroke: #092BC8;
             }
         }
     }
