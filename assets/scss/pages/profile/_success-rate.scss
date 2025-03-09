@@ -11,7 +11,7 @@
         justify-content: space-between;
     }
     &-title {
-        color: #092BC8;
+        color: #092bc8;
         font-family: Poppins;
         font-size: 21px;
         font-style: normal;
@@ -70,7 +70,7 @@
                 }
             }
             .chart-title {
-                color: #092BC8;
+                color: #092bc8;
                 text-align: center;
                 font-family: Poppins;
                 font-size: 18px;
@@ -78,6 +78,12 @@
                 font-weight: 500;
                 line-height: 31px;
                 letter-spacing: 0.9px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 200px; /* Başlık genişliğini sınırlandır */
+                display: inline-block;
+                cursor: pointer;
             }
         }
         .tab-panel-content {
@@ -150,3 +156,15 @@
         }
     }
 }
+.chart-title-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+  }

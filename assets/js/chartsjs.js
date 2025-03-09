@@ -341,3 +341,40 @@ if (chartInformatics) {
         plugins: [ChartDataLabels]
     });
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const chartTitles = document.querySelectorAll(".chart-title");
+    const tooltip = document.getElementById("chartTitleTooltip");
+
+    chartTitles.forEach((title) => {
+        const fullText = title.getAttribute("data-title");
+        // Mobil olup olmadığını kontrol et
+        if (window.innerWidth > 768) {
+            // Eğer başlık uzun ise kısalt
+            if (fullText.length > 20) {
+                title.textContent = fullText.substring(0, 20) + "...";
+            }
+
+            // Tooltip gösterme eventleri
+            title.addEventListener("mouseenter", function (e) {
+                tooltip.textContent = fullText;
+                tooltip.style.visibility = "visible";
+                tooltip.style.opacity = "1";
+                tooltip.style.top = e.pageY + 10 + "px";
+                tooltip.style.left = e.pageX + 10 + "px";
+            });
+
+            title.addEventListener("mousemove", function (e) {
+                tooltip.style.top = e.pageY + 10 + "px";
+                tooltip.style.left = e.pageX + 10 + "px";
+            });
+
+            title.addEventListener("mouseleave", function () {
+                tooltip.style.visibility = "hidden";
+                tooltip.style.opacity = "0";
+            });
+        }
+    });
+});
